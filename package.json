@@ -1,0 +1,60 @@
+{
+  "name": "LocationView",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "ipad": "yarn run lint && node_modules/.bin/react-native run-ios --simulator='iPad Air 2'",
+    "lint": "node_modules/.bin/eslint ./*.js ./**/*.js --env es6",
+    "start": "yarn run lint && node node_modules/react-native/local-cli/cli.js start",
+    "test": "yarn run lint && jest __tests__",
+    "ios": "yarn run lint && react-native run-ios",
+    "android": "yarn run lint && react-native run-android"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "16.6.3",
+    "react-native": "0.57.8",
+    "react-native-config": "^0.11.7",
+    "react-native-maps": "^0.23.0",
+    "react-native-popup-menu": "^0.15.0",
+    "react-native-side-menu": "^1.1.3",
+    "react-native-vector-icons": "^6.1.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.16.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "23.6.0",
+    "eslint": "^5.12.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-native": "^3.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3",
+    "redux-mock-store": "^1.5.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/jest-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "jsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(jsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
+}
