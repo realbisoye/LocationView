@@ -1,0 +1,105 @@
+59622b708caf08cd08e43c6e817749fe
+"use strict";var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));var _reduxMockStore = _interopRequireDefault(require("redux-mock-store"));
+var _reduxThunk = _interopRequireDefault(require("redux-thunk"));
+var actions = _interopRequireWildcard(require("../../app/actions"));
+
+var middlewares = [_reduxThunk.default];
+var mockStore = (0, _reduxMockStore.default)(middlewares);
+
+describe('Actions', function () {
+  it('fetchMarkers return markers', function _callee() {var store, actionData, dispatched;return _regenerator.default.async(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+            store = mockStore();
+            actionData = [{
+              type: 'LOADING' },
+            {
+              type: 'RECEIVE_MARKERS',
+              markers: [{
+                longitude: -74.044502,
+                latitude: 40.689247,
+                description: 'Liberty is fine',
+                title: 'Status Of Liberty' }] }];_context.next = 4;return _regenerator.default.awrap(
+
+
+
+            store.dispatch(actions.fetchMarkers()));case 4:
+            dispatched = store.getActions();
+            expect(dispatched[0].type).toEqual(actionData[0].type);
+            expect(dispatched[1].type).toEqual(actionData[1].type);
+            expect(dispatched[1].payload).toEqual(actionData.markers);case 8:case "end":return _context.stop();}}}, null, this);});
+
+
+  it('createMarker create a new marker', function _callee2() {var store, marker, actionData, dispatched;return _regenerator.default.async(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
+            store = mockStore();
+            marker = {
+              longitude: -73.968285,
+              latitude: 40.785091,
+              description: 'Central Park playground',
+              title: 'Central Park' };
+
+            actionData = [{
+              type: 'LOADING' },
+            {
+              type: 'CREATE_MARKER',
+              marker: marker }];_context2.next = 5;return _regenerator.default.awrap(
+
+
+            store.dispatch(actions.createMarker(marker)));case 5:
+            dispatched = store.getActions();
+            expect(dispatched[0].type).toEqual(actionData[0].type);
+            expect(dispatched[1].type).toEqual(actionData[1].type);
+            expect(dispatched[1].payload).toEqual(actionData.marker);case 9:case "end":return _context2.stop();}}}, null, this);});
+
+
+  it('updateMarker update marker data', function _callee3() {var store, marker, actionData, dispatched;return _regenerator.default.async(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:
+            store = mockStore();
+            marker = {
+              longitude: -73.968285,
+              latitude: 40.785091,
+              description: 'Central Park playground',
+              title: 'Central Park' };
+
+            actionData = [{
+              type: 'LOADING' },
+            {
+              type: 'UPDATE_MARKER',
+              updated: {
+                longitude: -73.968285,
+                latitude: 40.785091,
+                description: 'Central Park playground update',
+                title: 'Central Park' } }];_context3.next = 5;return _regenerator.default.awrap(
+
+
+
+            store.dispatch(actions.updateMarker(marker)));case 5:
+            dispatched = store.getActions();
+            expect(dispatched[0].type).toEqual(actionData[0].type);
+            expect(dispatched[1].type).toEqual(actionData[1].type);
+            expect(dispatched[1].payload).toEqual(actionData.updated);case 9:case "end":return _context3.stop();}}}, null, this);});
+
+
+  it('deleteMarker update marker data', function _callee4() {var store, actionData, dispatched;return _regenerator.default.async(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:
+            store = mockStore();
+            actionData = [{
+              type: 'LOADING' },
+            {
+              type: 'DELETE_MARKER' }];_context4.next = 4;return _regenerator.default.awrap(
+
+
+            store.dispatch(actions.deleteMarker()));case 4:
+            dispatched = store.getActions();
+            expect(dispatched[0].type).toEqual(actionData[0].type);
+            expect(dispatched[1].type).toEqual(actionData[1].type);case 7:case "end":return _context4.stop();}}}, null, this);});
+
+
+  it('toggleMarkerForm update marker data', function _callee5() {var store, actionData, dispatched;return _regenerator.default.async(function _callee5$(_context5) {while (1) {switch (_context5.prev = _context5.next) {case 0:
+            store = mockStore();
+            actionData = {
+              type: 'TOGGLE_MARKER_FORM' };_context5.next = 4;return _regenerator.default.awrap(
+
+
+            store.dispatch(actions.toggleMarkerForm(true)));case 4:
+            dispatched = store.getActions();
+            expect(dispatched[0].type).toEqual(actionData.type);
+            expect(dispatched[0].payload.open).toEqual(true);case 7:case "end":return _context5.stop();}}}, null, this);});
+
+});

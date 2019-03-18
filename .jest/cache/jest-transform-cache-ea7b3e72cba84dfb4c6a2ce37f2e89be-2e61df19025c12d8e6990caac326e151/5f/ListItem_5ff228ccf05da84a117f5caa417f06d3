@@ -1,0 +1,374 @@
+819e6fa7514764775c0c57c44bb6fd48
+"use strict";
+
+/* istanbul ignore next */var cov_1vigo68038 = function () {
+    var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/markerList/ListItem.js",
+        hash = "b67d2718c4b7e7f1bd488296d9d4e68747bedec0",
+        Function = function () {}.constructor,
+        global = new Function('return this')(),
+        gcv = "__coverage__",
+        coverageData = {
+        path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/markerList/ListItem.js",
+        statementMap: {
+            "0": {
+                start: {
+                    line: 1,
+                    column: 42
+                },
+                end: {
+                    line: 1,
+                    column: 97
+                }
+            },
+            "1": {
+                start: {
+                    line: 1,
+                    column: 98
+                },
+                end: {
+                    line: 1,
+                    column: 160
+                }
+            },
+            "2": {
+                start: {
+                    line: 1,
+                    column: 160
+                },
+                end: {
+                    line: 1,
+                    column: 185
+                }
+            },
+            "3": {
+                start: {
+                    line: 1,
+                    column: 198
+                },
+                end: {
+                    line: 1,
+                    column: 238
+                }
+            },
+            "4": {
+                start: {
+                    line: 2,
+                    column: 19
+                },
+                end: {
+                    line: 2,
+                    column: 42
+                }
+            },
+            "5": {
+                start: {
+                    line: 3,
+                    column: 30
+                },
+                end: {
+                    line: 3,
+                    column: 118
+                }
+            },
+            "6": {
+                start: {
+                    line: 4,
+                    column: 17
+                },
+                end: {
+                    line: 4,
+                    column: 62
+                }
+            },
+            "7": {
+                start: {
+                    line: 5,
+                    column: 28
+                },
+                end: {
+                    line: 5,
+                    column: 62
+                }
+            },
+            "8": {
+                start: {
+                    line: 11,
+                    column: 14
+                },
+                end: {
+                    line: 11,
+                    column: 57
+                }
+            },
+            "9": {
+                start: {
+                    line: 12,
+                    column: 14
+                },
+                end: {
+                    line: 12,
+                    column: 65
+                }
+            },
+            "10": {
+                start: {
+                    line: 12,
+                    column: 85
+                },
+                end: {
+                    line: 12,
+                    column: 175
+                }
+            },
+            "11": {
+                start: {
+                    line: 14,
+                    column: 15
+                },
+                end: {
+                    line: 33,
+                    column: 199
+                }
+            },
+            "12": {
+                start: {
+                    line: 14,
+                    column: 41
+                },
+                end: {
+                    line: 33,
+                    column: 198
+                }
+            },
+            "13": {
+                start: {
+                    line: 25,
+                    column: 100
+                },
+                end: {
+                    line: 25,
+                    column: 136
+                }
+            },
+            "14": {
+                start: {
+                    line: 26,
+                    column: 100
+                },
+                end: {
+                    line: 26,
+                    column: 142
+                }
+            },
+            "15": {
+                start: {
+                    line: 39,
+                    column: 0
+                },
+                end: {
+                    line: 42,
+                    column: 42
+                }
+            },
+            "16": {
+                start: {
+                    line: 45,
+                    column: 0
+                },
+                end: {
+                    line: 45,
+                    column: 8
+                }
+            },
+            "17": {
+                start: {
+                    line: 45,
+                    column: 9
+                },
+                end: {
+                    line: 45,
+                    column: 36
+                }
+            }
+        },
+        fnMap: {
+            "0": {
+                name: "ListItem",
+                decl: {
+                    start: {
+                        line: 14,
+                        column: 24
+                    },
+                    end: {
+                        line: 14,
+                        column: 32
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 14,
+                        column: 40
+                    },
+                    end: {
+                        line: 33,
+                        column: 199
+                    }
+                },
+                line: 14
+            },
+            "1": {
+                name: "onSelect",
+                decl: {
+                    start: {
+                        line: 25,
+                        column: 88
+                    },
+                    end: {
+                        line: 25,
+                        column: 96
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 25,
+                        column: 99
+                    },
+                    end: {
+                        line: 25,
+                        column: 137
+                    }
+                },
+                line: 25
+            },
+            "2": {
+                name: "onSelect",
+                decl: {
+                    start: {
+                        line: 26,
+                        column: 88
+                    },
+                    end: {
+                        line: 26,
+                        column: 96
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 26,
+                        column: 99
+                    },
+                    end: {
+                        line: 26,
+                        column: 143
+                    }
+                },
+                line: 26
+            }
+        },
+        branchMap: {
+            "0": {
+                loc: {
+                    start: {
+                        line: 30,
+                        column: 4
+                    },
+                    end: {
+                        line: 30,
+                        column: 203
+                    }
+                },
+                type: "binary-expr",
+                locations: [{
+                    start: {
+                        line: 30,
+                        column: 4
+                    },
+                    end: {
+                        line: 30,
+                        column: 26
+                    }
+                }, {
+                    start: {
+                        line: 30,
+                        column: 30
+                    },
+                    end: {
+                        line: 30,
+                        column: 203
+                    }
+                }],
+                line: 30
+            }
+        },
+        s: {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+        },
+        f: {
+            "0": 0,
+            "1": 0,
+            "2": 0
+        },
+        b: {
+            "0": [0, 0]
+        },
+        _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+    },
+        coverage = global[gcv] || (global[gcv] = {});
+
+    if (coverage[path] && coverage[path].hash === hash) {
+        return coverage[path];
+    }
+
+    coverageData.hash = hash;
+    return coverage[path] = coverageData;
+}();
+
+var _interopRequireDefault = /* istanbul ignore next */(cov_1vigo68038.s[0]++, require("@babel/runtime/helpers/interopRequireDefault")); /* istanbul ignore next */cov_1vigo68038.s[1]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_1vigo68038.s[2]++;
+exports.default = void 0;var _react = /* istanbul ignore next */(cov_1vigo68038.s[3]++, _interopRequireDefault(require("react")));
+var _reactNative = /* istanbul ignore next */(cov_1vigo68038.s[4]++, require("react-native"));
+var _MaterialCommunityIcons = /* istanbul ignore next */(cov_1vigo68038.s[5]++, _interopRequireDefault(require("react-native-vector-icons/dist/MaterialCommunityIcons")));
+var _propTypes = /* istanbul ignore next */(cov_1vigo68038.s[6]++, _interopRequireDefault(require("prop-types")));
+var _reactNativePopupMenu = /* istanbul ignore next */(cov_1vigo68038.s[7]++, require("react-native-popup-menu"));
+
+var _styles = /* istanbul ignore next */(cov_1vigo68038.s[8]++, _interopRequireDefault(require("./styles")));
+var _colors = /* istanbul ignore next */(cov_1vigo68038.s[9]++, _interopRequireDefault(require("../shared/colors")));var _jsxFileName = /* istanbul ignore next */(cov_1vigo68038.s[10]++, "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/markerList/ListItem.js");
+
+/* istanbul ignore next */cov_1vigo68038.s[11]++;
+var ListItem = function ListItem(props) {
+    /* istanbul ignore next */cov_1vigo68038.f[0]++;
+    cov_1vigo68038.s[12]++;
+    return _react.default.createElement(_reactNative.View, { style: _styles.default.listItemWrapper, __source: { fileName: _jsxFileName, lineNumber: 15 } }, _react.default.createElement(_MaterialCommunityIcons.default, { name: 'map-marker', size: 30, color: _colors.default.accent, __source: { fileName: _jsxFileName, lineNumber: 16 } }), _react.default.createElement(_reactNative.View, { style: _styles.default.listItemDetails, __source: { fileName: _jsxFileName, lineNumber: 17 } }, _react.default.createElement(_reactNative.View, { style: _styles.default.listItemTitleWrapper, __source: { fileName: _jsxFileName, lineNumber: 18 } }, _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemTitle, __source: { fileName: _jsxFileName, lineNumber: 19 } }, props.item.title), _react.default.createElement(_reactNativePopupMenu.Menu, { __source: { fileName: _jsxFileName, lineNumber: 20 } }, _react.default.createElement(_reactNativePopupMenu.MenuTrigger, { __source: { fileName: _jsxFileName, lineNumber: 21 } }, _react.default.createElement(_MaterialCommunityIcons.default, { name: 'dots-vertical', size: 22, color: _colors.default.primaryText, __source: { fileName: _jsxFileName, lineNumber: 22 } })), _react.default.createElement(_reactNativePopupMenu.MenuOptions, { __source: { fileName: _jsxFileName, lineNumber: 24 } }, _react.default.createElement(_reactNativePopupMenu.MenuOption, { onSelect: function onSelect() {
+            /* istanbul ignore next */cov_1vigo68038.f[1]++;
+            cov_1vigo68038.s[13]++;
+            return props.editMarker(props.item);
+        }, text: "Edit", __source: { fileName: _jsxFileName, lineNumber: 25 } }), _react.default.createElement(_reactNativePopupMenu.MenuOption, { onSelect: function onSelect() {
+            /* istanbul ignore next */cov_1vigo68038.f[2]++;
+            cov_1vigo68038.s[14]++;
+            return props.deleteMarker(props.item._id);
+        }, text: "Delete", __source: { fileName: _jsxFileName, lineNumber: 26 } })))), /* istanbul ignore next */(cov_1vigo68038.b[0][0]++, props.item.description) && /* istanbul ignore next */(cov_1vigo68038.b[0][1]++, _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemDescription, __source: { fileName: _jsxFileName, lineNumber: 30 } }, props.item.description)), _react.default.createElement(_reactNative.View, { style: _styles.default.listItemCoordinates, __source: { fileName: _jsxFileName, lineNumber: 31 } }, _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemCoordinateText, __source: { fileName: _jsxFileName, lineNumber: 32 } }, "Latitude: ", props.item.latitude), _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemCoordinateText, __source: { fileName: _jsxFileName, lineNumber: 33 } }, "Longitude: ", props.item.longitude))));
+};
+
+/* istanbul ignore next */cov_1vigo68038.s[15]++;
+ListItem.propTypes = {
+    item: _propTypes.default.object,
+    editMarker: _propTypes.default.func,
+    deleteMarker: _propTypes.default.func };var _default = /* istanbul ignore next */(cov_1vigo68038.s[16]++, ListItem); /* istanbul ignore next */cov_1vigo68038.s[17]++;
+exports.default = _default;

@@ -1,0 +1,39 @@
+271cdff2c0189b4cb636cd9eb2962293
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _reactRedux = require("react-redux");
+var actions = _interopRequireWildcard(require("../actions"));
+var _main = _interopRequireDefault(require("../components/main"));
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    markers: state.markers,
+    loading: state.loading,
+    openForm: state.openForm,
+    error: state.error };
+
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  var getMarkers = function getMarkers() {
+    dispatch(actions.fetchMarkers());
+  };
+  var addMarker = function addMarker(data) {
+    dispatch(actions.createMarker(data));
+  };
+
+  var updateMarker = function updateMarker(id, data) {
+    dispatch(actions.updateMarker(id, data));
+  };
+
+  var deleteMarker = function deleteMarker(id) {
+    dispatch(actions.deleteMarker(id));
+  };
+
+  var toggleMarkerForm = function toggleMarkerForm(open) {
+    dispatch(actions.toggleMarkerForm(open));
+  };
+
+  return { addMarker: addMarker, getMarkers: getMarkers, updateMarker: updateMarker, deleteMarker: deleteMarker, toggleMarkerForm: toggleMarkerForm };
+};
+
+var MainContainer = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_main.default);var _default =
+MainContainer;exports.default = _default;

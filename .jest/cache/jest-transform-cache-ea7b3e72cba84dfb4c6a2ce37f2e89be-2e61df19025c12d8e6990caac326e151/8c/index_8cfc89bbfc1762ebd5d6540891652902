@@ -1,0 +1,99 @@
+25b1e2e9a37e62ac65342c1c50a43808
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized"));var _react = _interopRequireDefault(require("react"));
+var _reactNative = require("react-native");
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _reactNativePopupMenu = require("react-native-popup-menu");
+var _appBar = _interopRequireDefault(require("../shared/appBar"));
+var _addMarker = _interopRequireDefault(require("../addMarker"));
+var _ListItem = _interopRequireDefault(require("./ListItem"));
+var _styles = _interopRequireDefault(require("./styles"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/markerList/index.js";var
+
+MarkerList = function (_React$Component) {(0, _inherits2.default)(MarkerList, _React$Component);
+  function MarkerList(props) {var _this;(0, _classCallCheck2.default)(this, MarkerList);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(MarkerList).call(this, props));
+    _this.state = {
+      marker: {},
+      markers: [],
+      updating: false,
+      openForm: false };
+
+    _this.renderListItem = _this.renderListItem.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
+    _this.toggleMarkerForm = _this.toggleMarkerForm.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
+    _this.openEditForm = _this.openEditForm.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));return _this;
+  }(0, _createClass2.default)(MarkerList, [{ key: "componentDidUpdate", value: function componentDidUpdate(
+
+    prevProps) {
+      if (this.props.openForm !== prevProps.openForm) {
+        this.setState({
+          openForm: this.props.openForm });
+
+      }
+    } }, { key: "renderListItem", value: function renderListItem(
+
+    item, index) {
+      return (
+        _react.default.createElement(_ListItem.default, {
+          key: index,
+          item: item,
+          deleteMarker: this.props.deleteMarker,
+          editMarker: this.openEditForm, __source: { fileName: _jsxFileName, lineNumber: 34 } }));
+
+
+    } }, { key: "openEditForm", value: function openEditForm(
+
+    item) {
+      this.setState({
+        updating: true,
+        marker: item },
+      this.toggleMarkerForm);
+    } }, { key: "toggleMarkerForm", value: function toggleMarkerForm()
+
+    {
+      var toggle = !this.props.openForm;
+      this.props.toggleForm(toggle);
+      if (!toggle) {
+        this.setState({
+          updating: false,
+          marker: {} });
+
+      }
+    } }, { key: "render", value: function render()
+
+    {var _this2 = this;var
+      markers = this.props.markers;
+      return (
+        _react.default.createElement(_reactNativePopupMenu.MenuProvider, { __source: { fileName: _jsxFileName, lineNumber: 64 } },
+        _react.default.createElement(_reactNative.SafeAreaView, { style: _styles.default.listWrapper, __source: { fileName: _jsxFileName, lineNumber: 65 } },
+        _react.default.createElement(_appBar.default, {
+          title: 'Markers',
+          menuIconName: 'map-marker-plus',
+          onMenuClick: this.toggleMarkerForm,
+          light: true, __source: { fileName: _jsxFileName, lineNumber: 66 } }),
+
+        _react.default.createElement(_reactNative.ScrollView, { contentContainerStyle: _styles.default.list, __source: { fileName: _jsxFileName, lineNumber: 72 } },
+        markers.map(function (marker, index) {return _this2.renderListItem(marker, index);})),
+
+        _react.default.createElement(_addMarker.default, {
+          showForm: this.state.openForm,
+          addMarker: this.props.addMarker,
+          isUpdate: this.state.updating,
+          marker: this.state.marker,
+          updateMarker: this.props.updateMarker,
+          toggleForm: this.toggleMarkerForm, __source: { fileName: _jsxFileName, lineNumber: 75 } }))));
+
+
+
+
+    } }]);return MarkerList;}(_react.default.Component);
+
+
+MarkerList.propTypes = {
+  markers: _propTypes.default.arrayOf(_propTypes.default.object),
+  addMarker: _propTypes.default.func,
+  openForm: _propTypes.default.bool,
+  toggleForm: _propTypes.default.func,
+  updateMarker: _propTypes.default.func,
+  deleteMarker: _propTypes.default.func };var _default =
+
+
+MarkerList;exports.default = _default;

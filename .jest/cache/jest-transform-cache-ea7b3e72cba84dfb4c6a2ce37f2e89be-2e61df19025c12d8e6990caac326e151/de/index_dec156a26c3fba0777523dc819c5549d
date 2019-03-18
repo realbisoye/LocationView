@@ -1,0 +1,132 @@
+2a04196d95b828ccccab108ab16c6cb0
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized"));var _react = _interopRequireDefault(require("react"));
+var _reactNative = require("react-native");
+var _reactNativeMaps = _interopRequireDefault(require("react-native-maps"));
+var _reactNativeSideMenu = _interopRequireDefault(require("react-native-side-menu"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _appBar = _interopRequireDefault(require("../shared/appBar"));
+var _styles = _interopRequireDefault(require("./styles"));
+var _mapMarker = _interopRequireDefault(require("../mapMarker"));
+var _markerList = _interopRequireDefault(require("../markerList"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/main/index.js";var _Dimensions$get =
+
+_reactNative.Dimensions.get('window'),width = _Dimensions$get.width,height = _Dimensions$get.height;
+var ASPECT_RATIO = width / height;
+var LATITUDE = 37.78825;
+var LONGITUDE = -122.4324;
+var LATITUDE_DELTA = 0.0922;
+var LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
+
+var initialRegion = {
+  latitude: LATITUDE,
+  latitudeDelta: LATITUDE_DELTA,
+  longitude: LONGITUDE,
+  longitudeDelta: LONGITUDE_DELTA };
+
+
+var DEFAULT_PADDING = {
+  bottom: 40,
+  left: 40,
+  right: 40,
+  top: 40 };var
+
+
+Main = function (_React$Component) {(0, _inherits2.default)(Main, _React$Component);
+
+
+  function Main(props) {var _this;(0, _classCallCheck2.default)(this, Main);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Main).call(this, props));
+    _this.state = {
+      openMenu: false };
+
+    _this.openMarkers = _this.openMarkers.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));return _this;
+  }(0, _createClass2.default)(Main, [{ key: "componentDidMount", value: function componentDidMount()
+
+    {
+      this.props.getMarkers();
+    } }, { key: "componentDidUpdate", value: function componentDidUpdate()
+
+    {
+      var coordinates = this.props.markers.map(function (marker) {
+        return {
+          longitude: marker.longitude,
+          latitude: marker.latitude };
+
+      });
+      if (coordinates.length) {
+        this.map.fitToCoordinates(coordinates, {
+          animated: true,
+          edgePadding: DEFAULT_PADDING });
+
+      }
+    } }, { key: "openMarkers", value: function openMarkers(
+
+    isOpen) {
+      var openMenu = isOpen ? true : !this.state.openMenu;
+      this.setState({
+        openMenu: openMenu });
+
+    } }, { key: "render", value: function render()
+
+    {var _this2 = this;
+      var screenWidth = _reactNative.Dimensions.get('window').width;var
+      markers = this.props.markers;
+      return (
+        _react.default.createElement(_reactNativeSideMenu.default, {
+          menu:
+          _react.default.createElement(_markerList.default, {
+            markers: markers,
+            addMarker: this.props.addMarker,
+            updateMarker: this.props.updateMarker,
+            deleteMarker: this.props.deleteMarker,
+            openForm: this.props.openForm,
+            toggleForm: this.props.toggleMarkerForm, __source: { fileName: _jsxFileName, lineNumber: 75 } }),
+
+          isOpen: this.state.openMenu,
+          onChange: this.openMarkers,
+          openMenuOffset: screenWidth * 0.85, __source: { fileName: _jsxFileName, lineNumber: 73 } },
+
+        _react.default.createElement(_reactNative.SafeAreaView, { style: _styles.default.wrapper, __source: { fileName: _jsxFileName, lineNumber: 87 } },
+        _react.default.createElement(_appBar.default, {
+          title: 'Location View',
+          menuIconName: 'map-marker-multiple',
+          onMenuClick: this.openMarkers, __source: { fileName: _jsxFileName, lineNumber: 88 } }),
+
+        _react.default.createElement(_reactNative.View, { style: _styles.default.mapWrapper, __source: { fileName: _jsxFileName, lineNumber: 93 } },
+        _react.default.createElement(_reactNativeMaps.default, {
+          ref: function ref(_ref) {_this2.map = _ref;},
+          provider: 'google',
+          style: _styles.default.map,
+          showsUserLocation: true,
+          loadingEnabled: true,
+          region: initialRegion, __source: { fileName: _jsxFileName, lineNumber: 94 } },
+
+        markers.map(function (marker, index) {return (
+            _react.default.createElement(_mapMarker.default, {
+              key: marker.longitude + marker.latitude + index,
+              longitude: marker.longitude,
+              latitude: marker.latitude,
+              id: marker.id,
+              title: marker.title,
+              description: marker.description, __source: { fileName: _jsxFileName, lineNumber: 103 } }));}))))));
+
+
+
+
+
+
+    } }]);return Main;}(_react.default.Component);Main.map = null;
+
+
+Main.propTypes = {
+  markers: _propTypes.default.arrayOf(_propTypes.default.object),
+  loading: _propTypes.default.bool,
+  error: _propTypes.default.bool,
+  openForm: _propTypes.default.bool,
+  getMarkers: _propTypes.default.func,
+  addMarker: _propTypes.default.func,
+  toggleMarkerForm: _propTypes.default.func,
+  updateMarker: _propTypes.default.func,
+  deleteMarker: _propTypes.default.func };var _default =
+
+
+Main;exports.default = _default;

@@ -1,0 +1,173 @@
+0b036d79feecd95fa14330177ddfc17d
+"use strict";
+
+/* istanbul ignore next */var cov_1n5bfe8fbu = function () {
+  var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/markerList/styles.js",
+      hash = "6e4390f4098d13243fdc81203bf456d7e5cd90cf",
+      Function = function () {}.constructor,
+      global = new Function('return this')(),
+      gcv = "__coverage__",
+      coverageData = {
+    path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/markerList/styles.js",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 42
+        },
+        end: {
+          line: 1,
+          column: 97
+        }
+      },
+      "1": {
+        start: {
+          line: 1,
+          column: 98
+        },
+        end: {
+          line: 1,
+          column: 160
+        }
+      },
+      "2": {
+        start: {
+          line: 1,
+          column: 160
+        },
+        end: {
+          line: 1,
+          column: 185
+        }
+      },
+      "3": {
+        start: {
+          line: 1,
+          column: 204
+        },
+        end: {
+          line: 1,
+          column: 227
+        }
+      },
+      "4": {
+        start: {
+          line: 2,
+          column: 14
+        },
+        end: {
+          line: 2,
+          column: 65
+        }
+      },
+      "5": {
+        start: {
+          line: 4,
+          column: 13
+        },
+        end: {
+          line: 51,
+          column: 32
+        }
+      },
+      "6": {
+        start: {
+          line: 55,
+          column: 0
+        },
+        end: {
+          line: 55,
+          column: 6
+        }
+      },
+      "7": {
+        start: {
+          line: 55,
+          column: 7
+        },
+        end: {
+          line: 55,
+          column: 34
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {},
+    b: {},
+    _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+  },
+      coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+var _interopRequireDefault = /* istanbul ignore next */(cov_1n5bfe8fbu.s[0]++, require("@babel/runtime/helpers/interopRequireDefault")); /* istanbul ignore next */cov_1n5bfe8fbu.s[1]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_1n5bfe8fbu.s[2]++;
+exports.default = void 0;var _reactNative = /* istanbul ignore next */(cov_1n5bfe8fbu.s[3]++, require("react-native"));
+var _colors = /* istanbul ignore next */(cov_1n5bfe8fbu.s[4]++, _interopRequireDefault(require("../shared/colors")));
+
+var styles = /* istanbul ignore next */(cov_1n5bfe8fbu.s[5]++, _reactNative.StyleSheet.create({
+  list: {
+    borderColor: _colors.default.appBarDark,
+    borderTopWidth: 2,
+    flex: 1,
+    marginTop: 20 },
+
+  listItemCoordinateText: {
+    color: _colors.default.primaryText,
+    fontSize: 11,
+    marginRight: 5 },
+
+  listItemCoordinates: {
+    flexDirection: 'row' },
+
+  listItemDescription: {
+    color: _colors.default.primaryText,
+    fontSize: 14,
+    marginBottom: 5 },
+
+  listItemDetails: {
+    flex: 1,
+    marginLeft: '5%' },
+
+  listItemTitle: {
+    color: _colors.default.accent,
+    fontSize: 20,
+    fontWeight: '500',
+    marginBottom: 5 },
+
+  listItemTitleWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginRight: 5 },
+
+  listItemWrapper: {
+    borderBottomWidth: 1,
+    borderColor: _colors.default.appBarDark,
+    flexDirection: 'row',
+    height: 100,
+    marginHorizontal: 20,
+    paddingVertical: 20,
+    zIndex: 1000 },
+
+  listWrapper: {
+    backgroundColor: _colors.default.appBarLight,
+    flex: 1,
+    flexDirection: 'column' } }));var _default = /* istanbul ignore next */(cov_1n5bfe8fbu.s[6]++, styles); /* istanbul ignore next */cov_1n5bfe8fbu.s[7]++;
+exports.default = _default;

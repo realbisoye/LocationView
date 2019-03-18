@@ -1,0 +1,283 @@
+03fa601b6777cb7419dc491ae0054763
+"use strict";
+
+/* istanbul ignore next */var cov_21lsz90ump = function () {
+    var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/appBar.js",
+        hash = "9d0ee86bafbf1a44eae5612cdaa6ec53870abbaf",
+        Function = function () {}.constructor,
+        global = new Function('return this')(),
+        gcv = "__coverage__",
+        coverageData = {
+        path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/appBar.js",
+        statementMap: {
+            "0": {
+                start: {
+                    line: 1,
+                    column: 42
+                },
+                end: {
+                    line: 1,
+                    column: 97
+                }
+            },
+            "1": {
+                start: {
+                    line: 1,
+                    column: 98
+                },
+                end: {
+                    line: 1,
+                    column: 160
+                }
+            },
+            "2": {
+                start: {
+                    line: 1,
+                    column: 160
+                },
+                end: {
+                    line: 1,
+                    column: 185
+                }
+            },
+            "3": {
+                start: {
+                    line: 1,
+                    column: 198
+                },
+                end: {
+                    line: 1,
+                    column: 238
+                }
+            },
+            "4": {
+                start: {
+                    line: 2,
+                    column: 19
+                },
+                end: {
+                    line: 2,
+                    column: 42
+                }
+            },
+            "5": {
+                start: {
+                    line: 3,
+                    column: 30
+                },
+                end: {
+                    line: 3,
+                    column: 118
+                }
+            },
+            "6": {
+                start: {
+                    line: 4,
+                    column: 17
+                },
+                end: {
+                    line: 4,
+                    column: 62
+                }
+            },
+            "7": {
+                start: {
+                    line: 5,
+                    column: 14
+                },
+                end: {
+                    line: 5,
+                    column: 57
+                }
+            },
+            "8": {
+                start: {
+                    line: 6,
+                    column: 14
+                },
+                end: {
+                    line: 6,
+                    column: 57
+                }
+            },
+            "9": {
+                start: {
+                    line: 6,
+                    column: 77
+                },
+                end: {
+                    line: 6,
+                    column: 161
+                }
+            },
+            "10": {
+                start: {
+                    line: 8,
+                    column: 13
+                },
+                end: {
+                    line: 17,
+                    column: 20
+                }
+            },
+            "11": {
+                start: {
+                    line: 8,
+                    column: 37
+                },
+                end: {
+                    line: 17,
+                    column: 19
+                }
+            },
+            "12": {
+                start: {
+                    line: 22,
+                    column: 0
+                },
+                end: {
+                    line: 26,
+                    column: 35
+                }
+            },
+            "13": {
+                start: {
+                    line: 29,
+                    column: 0
+                },
+                end: {
+                    line: 29,
+                    column: 6
+                }
+            },
+            "14": {
+                start: {
+                    line: 29,
+                    column: 7
+                },
+                end: {
+                    line: 29,
+                    column: 34
+                }
+            }
+        },
+        fnMap: {
+            "0": {
+                name: "AppBar",
+                decl: {
+                    start: {
+                        line: 8,
+                        column: 22
+                    },
+                    end: {
+                        line: 8,
+                        column: 28
+                    }
+                },
+                loc: {
+                    start: {
+                        line: 8,
+                        column: 36
+                    },
+                    end: {
+                        line: 17,
+                        column: 20
+                    }
+                },
+                line: 8
+            }
+        },
+        branchMap: {
+            "0": {
+                loc: {
+                    start: {
+                        line: 10,
+                        column: 25
+                    },
+                    end: {
+                        line: 10,
+                        column: 95
+                    }
+                },
+                type: "cond-expr",
+                locations: [{
+                    start: {
+                        line: 10,
+                        column: 39
+                    },
+                    end: {
+                        line: 10,
+                        column: 66
+                    }
+                }, {
+                    start: {
+                        line: 10,
+                        column: 69
+                    },
+                    end: {
+                        line: 10,
+                        column: 95
+                    }
+                }],
+                line: 10
+            }
+        },
+        s: {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+        },
+        f: {
+            "0": 0
+        },
+        b: {
+            "0": [0, 0]
+        },
+        _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+    },
+        coverage = global[gcv] || (global[gcv] = {});
+
+    if (coverage[path] && coverage[path].hash === hash) {
+        return coverage[path];
+    }
+
+    coverageData.hash = hash;
+    return coverage[path] = coverageData;
+}();
+
+var _interopRequireDefault = /* istanbul ignore next */(cov_21lsz90ump.s[0]++, require("@babel/runtime/helpers/interopRequireDefault")); /* istanbul ignore next */cov_21lsz90ump.s[1]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_21lsz90ump.s[2]++;
+exports.default = void 0;var _react = /* istanbul ignore next */(cov_21lsz90ump.s[3]++, _interopRequireDefault(require("react")));
+var _reactNative = /* istanbul ignore next */(cov_21lsz90ump.s[4]++, require("react-native"));
+var _MaterialCommunityIcons = /* istanbul ignore next */(cov_21lsz90ump.s[5]++, _interopRequireDefault(require("react-native-vector-icons/dist/MaterialCommunityIcons")));
+var _propTypes = /* istanbul ignore next */(cov_21lsz90ump.s[6]++, _interopRequireDefault(require("prop-types")));
+var _styles = /* istanbul ignore next */(cov_21lsz90ump.s[7]++, _interopRequireDefault(require("./styles")));
+var _colors = /* istanbul ignore next */(cov_21lsz90ump.s[8]++, _interopRequireDefault(require("./colors")));var _jsxFileName = /* istanbul ignore next */(cov_21lsz90ump.s[9]++, "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/appBar.js");
+
+/* istanbul ignore next */cov_21lsz90ump.s[10]++;
+var AppBar = function AppBar(props) {
+    /* istanbul ignore next */cov_21lsz90ump.f[0]++;
+    cov_21lsz90ump.s[11]++;
+    return _react.default.createElement(_reactNative.View, { style: [_styles.default.appBar, {
+            backgroundColor: props.light ? /* istanbul ignore next */(cov_21lsz90ump.b[0][0]++, _colors.default.appBarLight) : /* istanbul ignore next */(cov_21lsz90ump.b[0][1]++, _colors.default.appBarDark) }], __source: { fileName: _jsxFileName, lineNumber: 9 } }, _react.default.createElement(_reactNative.TouchableOpacity, { testID: 'menuButton', onPress: props.onMenuClick, __source: { fileName: _jsxFileName, lineNumber: 13 } }, _react.default.createElement(_MaterialCommunityIcons.default, { name: props.menuIconName, size: 25, color: _colors.default.primaryText, __source: { fileName: _jsxFileName, lineNumber: 14 } })), _react.default.createElement(_reactNative.Text, { testID: 'apptitle', style: _styles.default.appBarTitle, __source: { fileName: _jsxFileName, lineNumber: 16 } }, props.title));
+};
+
+/* istanbul ignore next */cov_21lsz90ump.s[12]++;
+AppBar.propTypes = {
+    title: _propTypes.default.string,
+    menuIconName: _propTypes.default.string,
+    onMenuClick: _propTypes.default.func,
+    light: _propTypes.default.bool };var _default = /* istanbul ignore next */(cov_21lsz90ump.s[13]++, AppBar); /* istanbul ignore next */cov_21lsz90ump.s[14]++;
+exports.default = _default;

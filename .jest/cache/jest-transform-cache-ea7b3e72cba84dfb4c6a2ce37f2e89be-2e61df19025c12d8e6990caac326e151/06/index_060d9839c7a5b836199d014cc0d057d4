@@ -1,0 +1,65 @@
+74a5df031d299d1e41cb10e9212f7e5a
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = exports.initialState = void 0;var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));var _actions = require("../actions");
+var initialState = {
+  markers: [],
+  openForm: false,
+  loading: false,
+  error: false };exports.initialState = initialState;var _default =
+
+
+function _default() {var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;var action = arguments.length > 1 ? arguments[1] : undefined;
+  switch (action.type) {
+    case _actions.actionTypes.CREATE_MARKER:{
+        var markers = state.markers;
+        markers.push(action.payload);
+        return (0, _objectSpread2.default)({},
+        state, {
+          loading: false,
+          openForm: false,
+          error: false,
+          markers: markers });
+
+      }
+    case _actions.actionTypes.RECEIVE_MARKERS:{
+        return (0, _objectSpread2.default)({},
+        state, {
+          loading: false,
+          error: false,
+          markers: action.payload });
+
+      }
+    case _actions.actionTypes.UPDATE_MARKER:{
+        var _markers = state.markers;
+        var updated = action.payload;
+        var index = _markers.findIndex(function (marker) {return marker._id === updated._id;});
+
+        if (index > -1) {
+          _markers[index] = updated;
+        }
+        return (0, _objectSpread2.default)({},
+        state, {
+          loading: false,
+          openForm: false,
+          error: false,
+          markers: _markers });
+
+      }
+    case _actions.actionTypes.DELETE_MARKER:{
+        var _markers2 = state.markers.filter(function (marker) {return marker._id !== action.payload;});
+        return (0, _objectSpread2.default)({},
+        state, {
+          loading: false,
+          error: false,
+          markers: _markers2 });
+
+      }
+    case _actions.actionTypes.TOGGLE_MARKER_FORM:{
+        return (0, _objectSpread2.default)({},
+        state, {
+          openForm: action.payload.open });
+
+      }
+    default:
+      return state;}
+
+};exports.default = _default;

@@ -1,0 +1,151 @@
+96914fb5d2ddbdb4e069bd912c7fe11c
+"use strict";
+
+/* istanbul ignore next */var cov_2korze7el2 = function () {
+  var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/addMarker/styles.js",
+      hash = "a17cd7cda5885a703091ed6343484ec603acd50f",
+      Function = function () {}.constructor,
+      global = new Function('return this')(),
+      gcv = "__coverage__",
+      coverageData = {
+    path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/addMarker/styles.js",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 42
+        },
+        end: {
+          line: 1,
+          column: 97
+        }
+      },
+      "1": {
+        start: {
+          line: 1,
+          column: 98
+        },
+        end: {
+          line: 1,
+          column: 160
+        }
+      },
+      "2": {
+        start: {
+          line: 1,
+          column: 160
+        },
+        end: {
+          line: 1,
+          column: 185
+        }
+      },
+      "3": {
+        start: {
+          line: 1,
+          column: 204
+        },
+        end: {
+          line: 1,
+          column: 227
+        }
+      },
+      "4": {
+        start: {
+          line: 2,
+          column: 14
+        },
+        end: {
+          line: 2,
+          column: 65
+        }
+      },
+      "5": {
+        start: {
+          line: 4,
+          column: 13
+        },
+        end: {
+          line: 29,
+          column: 32
+        }
+      },
+      "6": {
+        start: {
+          line: 33,
+          column: 0
+        },
+        end: {
+          line: 33,
+          column: 6
+        }
+      },
+      "7": {
+        start: {
+          line: 33,
+          column: 7
+        },
+        end: {
+          line: 33,
+          column: 34
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {},
+    b: {},
+    _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+  },
+      coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+var _interopRequireDefault = /* istanbul ignore next */(cov_2korze7el2.s[0]++, require("@babel/runtime/helpers/interopRequireDefault")); /* istanbul ignore next */cov_2korze7el2.s[1]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_2korze7el2.s[2]++;
+exports.default = void 0;var _reactNative = /* istanbul ignore next */(cov_2korze7el2.s[3]++, require("react-native"));
+var _colors = /* istanbul ignore next */(cov_2korze7el2.s[4]++, _interopRequireDefault(require("../shared/colors")));
+
+var styles = /* istanbul ignore next */(cov_2korze7el2.s[5]++, _reactNative.StyleSheet.create({
+  formField: {
+    flexDirection: 'column',
+    marginVertical: 10 },
+
+  formWrapper: {
+    flex: 1,
+    marginHorizontal: 20,
+    marginTop: 30 },
+
+  input: {
+    borderColor: _colors.default.appBarDark,
+    borderWidth: 1,
+    height: 40,
+    paddingHorizontal: 10 },
+
+  inputLabel: {
+    color: _colors.default.primaryText,
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginBottom: 5 },
+
+  modalContent: {
+    backgroundColor: _colors.default.appBarLight,
+    flex: 1,
+    flexDirection: 'column' } }));var _default = /* istanbul ignore next */(cov_2korze7el2.s[6]++, styles); /* istanbul ignore next */cov_2korze7el2.s[7]++;
+exports.default = _default;

@@ -1,0 +1,188 @@
+a608c4869d28160c1c2d39bc42fa6094
+
+
+
+
+
+
+
+
+
+
+'use strict';var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/node_modules/react-native/Libraries/Components/Button.js";function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}var
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Button = function (_React$Component) {_inherits(Button, _React$Component);function Button() {_classCallCheck(this, Button);return _possibleConstructorReturn(this, _getPrototypeOf(Button).apply(this, arguments));}_createClass(Button, [{ key: "render", value: function render()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {var _this$props =
+
+
+
+
+
+
+
+
+      this.props,accessibilityLabel = _this$props.accessibilityLabel,color = _this$props.color,onPress = _this$props.onPress,title = _this$props.title,hasTVPreferredFocus = _this$props.hasTVPreferredFocus,disabled = _this$props.disabled,testID = _this$props.testID;
+      var buttonStyles = [styles.button];
+      var textStyles = [styles.text];
+      if (color) {
+        if (require('Platform').OS === 'ios') {
+          textStyles.push({ color: color });
+        } else {
+          buttonStyles.push({ backgroundColor: color });
+        }
+      }
+      var accessibilityStates = [];
+      if (disabled) {
+        buttonStyles.push(styles.buttonDisabled);
+        textStyles.push(styles.textDisabled);
+        accessibilityStates.push('disabled');
+      }
+      require('fbjs/lib/invariant')(
+      typeof title === 'string',
+      'The title prop of a Button must be a string');
+
+      var formattedTitle =
+      require('Platform').OS === 'android' ? title.toUpperCase() : title;
+      var Touchable =
+      require('Platform').OS === 'android' ? require('TouchableNativeFeedback') : require('TouchableOpacity');
+      return (
+        require('React').createElement(Touchable, {
+          accessibilityLabel: accessibilityLabel,
+          accessibilityRole: "button",
+          accessibilityStates: accessibilityStates,
+          hasTVPreferredFocus: hasTVPreferredFocus,
+          testID: testID,
+          disabled: disabled,
+          onPress: onPress, __source: { fileName: _jsxFileName, lineNumber: 127 } },
+        require('React').createElement(require('View'), { style: buttonStyles, __source: { fileName: _jsxFileName, lineNumber: 135 } },
+        require('React').createElement(require('Text'), { style: textStyles, disabled: disabled, __source: { fileName: _jsxFileName, lineNumber: 136 } },
+        formattedTitle))));
+
+
+
+
+    } }]);return Button;}(require('React').Component);Button.propTypes = { title: require('prop-types').string.isRequired, accessibilityLabel: require('prop-types').string, color: require('ColorPropType'), disabled: require('prop-types').bool, hasTVPreferredFocus: require('prop-types').bool, onPress: require('prop-types').func.isRequired, testID: require('prop-types').string };
+
+
+var styles = require('StyleSheet').create({
+  button: require('Platform').select({
+    ios: {},
+    android: {
+      elevation: 4,
+
+      backgroundColor: '#2196F3',
+      borderRadius: 2 } }),
+
+
+  text: require('Platform').select({
+    ios: {
+
+      color: '#007AFF',
+      textAlign: 'center',
+      padding: 8,
+      fontSize: 18 },
+
+    android: {
+      color: 'white',
+      textAlign: 'center',
+      padding: 8,
+      fontWeight: '500' } }),
+
+
+  buttonDisabled: require('Platform').select({
+    ios: {},
+    android: {
+      elevation: 0,
+      backgroundColor: '#dfdfdf' } }),
+
+
+  textDisabled: require('Platform').select({
+    ios: {
+      color: '#cdcdcd' },
+
+    android: {
+      color: '#a1a1a1' } }) });
+
+
+
+
+module.exports = Button;

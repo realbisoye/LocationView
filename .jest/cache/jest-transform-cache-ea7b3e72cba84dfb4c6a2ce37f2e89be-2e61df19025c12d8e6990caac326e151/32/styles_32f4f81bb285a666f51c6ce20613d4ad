@@ -1,0 +1,22 @@
+0cd9e5ff33bec2c851fd741db764285d
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _reactNative = require("react-native");
+
+var styles = _reactNative.StyleSheet.create({
+  appBar: {
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'row',
+    maxHeight: '5%',
+    paddingHorizontal: 20,
+    top: 0,
+    width: '100%' },
+
+  appBarTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginLeft: '22%',
+    zIndex: 1000 } });var _default =
+
+
+
+styles;exports.default = _default;

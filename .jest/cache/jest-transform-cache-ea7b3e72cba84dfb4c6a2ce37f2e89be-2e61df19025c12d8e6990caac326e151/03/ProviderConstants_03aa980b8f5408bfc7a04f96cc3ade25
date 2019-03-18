@@ -1,0 +1,3 @@
+75cf1c7c47b01d43c2498a228f7970e8
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.PROVIDER_GOOGLE = exports.PROVIDER_DEFAULT = void 0;var PROVIDER_DEFAULT = null;exports.PROVIDER_DEFAULT = PROVIDER_DEFAULT;
+var PROVIDER_GOOGLE = 'google';exports.PROVIDER_GOOGLE = PROVIDER_GOOGLE;

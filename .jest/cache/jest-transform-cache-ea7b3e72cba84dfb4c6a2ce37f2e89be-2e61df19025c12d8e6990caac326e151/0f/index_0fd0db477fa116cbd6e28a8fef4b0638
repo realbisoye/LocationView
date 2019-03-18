@@ -1,0 +1,256 @@
+9c9bc3d755494ec2b98b5aeb13f76761
+"use strict";
+
+/* istanbul ignore next */var cov_i8gjyz2aa = function () {
+  var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/mapMarker/index.js",
+      hash = "8dadff64b8cc6fd560daa92879dd669468408158",
+      Function = function () {}.constructor,
+      global = new Function('return this')(),
+      gcv = "__coverage__",
+      coverageData = {
+    path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/mapMarker/index.js",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 42
+        },
+        end: {
+          line: 1,
+          column: 97
+        }
+      },
+      "1": {
+        start: {
+          line: 1,
+          column: 98
+        },
+        end: {
+          line: 1,
+          column: 160
+        }
+      },
+      "2": {
+        start: {
+          line: 1,
+          column: 160
+        },
+        end: {
+          line: 1,
+          column: 185
+        }
+      },
+      "3": {
+        start: {
+          line: 1,
+          column: 198
+        },
+        end: {
+          line: 1,
+          column: 238
+        }
+      },
+      "4": {
+        start: {
+          line: 2,
+          column: 23
+        },
+        end: {
+          line: 2,
+          column: 51
+        }
+      },
+      "5": {
+        start: {
+          line: 3,
+          column: 30
+        },
+        end: {
+          line: 3,
+          column: 118
+        }
+      },
+      "6": {
+        start: {
+          line: 4,
+          column: 17
+        },
+        end: {
+          line: 4,
+          column: 62
+        }
+      },
+      "7": {
+        start: {
+          line: 5,
+          column: 14
+        },
+        end: {
+          line: 5,
+          column: 65
+        }
+      },
+      "8": {
+        start: {
+          line: 5,
+          column: 85
+        },
+        end: {
+          line: 5,
+          column: 171
+        }
+      },
+      "9": {
+        start: {
+          line: 7,
+          column: 16
+        },
+        end: {
+          line: 24,
+          column: 1
+        }
+      },
+      "10": {
+        start: {
+          line: 8,
+          column: 15
+        },
+        end: {
+          line: 10,
+          column: 32
+        }
+      },
+      "11": {
+        start: {
+          line: 13,
+          column: 2
+        },
+        end: {
+          line: 21,
+          column: 187
+        }
+      },
+      "12": {
+        start: {
+          line: 26,
+          column: 0
+        },
+        end: {
+          line: 31,
+          column: 37
+        }
+      },
+      "13": {
+        start: {
+          line: 34,
+          column: 0
+        },
+        end: {
+          line: 34,
+          column: 9
+        }
+      },
+      "14": {
+        start: {
+          line: 34,
+          column: 10
+        },
+        end: {
+          line: 34,
+          column: 37
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "MapMarker",
+        decl: {
+          start: {
+            line: 7,
+            column: 25
+          },
+          end: {
+            line: 7,
+            column: 34
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 42
+          },
+          end: {
+            line: 24,
+            column: 1
+          }
+        },
+        line: 7
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+  },
+      coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+var _interopRequireDefault = /* istanbul ignore next */(cov_i8gjyz2aa.s[0]++, require("@babel/runtime/helpers/interopRequireDefault")); /* istanbul ignore next */cov_i8gjyz2aa.s[1]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_i8gjyz2aa.s[2]++;
+exports.default = void 0;var _react = /* istanbul ignore next */(cov_i8gjyz2aa.s[3]++, _interopRequireDefault(require("react")));
+var _reactNativeMaps = /* istanbul ignore next */(cov_i8gjyz2aa.s[4]++, require("react-native-maps"));
+var _MaterialCommunityIcons = /* istanbul ignore next */(cov_i8gjyz2aa.s[5]++, _interopRequireDefault(require("react-native-vector-icons/dist/MaterialCommunityIcons")));
+var _propTypes = /* istanbul ignore next */(cov_i8gjyz2aa.s[6]++, _interopRequireDefault(require("prop-types")));
+var _colors = /* istanbul ignore next */(cov_i8gjyz2aa.s[7]++, _interopRequireDefault(require("../shared/colors")));var _jsxFileName = /* istanbul ignore next */(cov_i8gjyz2aa.s[8]++, "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/mapMarker/index.js");
+
+/* istanbul ignore next */cov_i8gjyz2aa.s[9]++;
+var MapMarker = function MapMarker(props) {
+  /* istanbul ignore next */cov_i8gjyz2aa.f[0]++;
+
+  var latlng = /* istanbul ignore next */(cov_i8gjyz2aa.s[10]++, {
+    latitude: props.latitude,
+    longitude: props.longitude });
+
+  /* istanbul ignore next */cov_i8gjyz2aa.s[11]++;
+  return _react.default.createElement(_reactNativeMaps.Marker, {
+    flat: true,
+    coordinate: latlng,
+    identifier: props.id,
+    title: props.title,
+    description: props.description, __source: { fileName: _jsxFileName, lineNumber: 14 } }, _react.default.createElement(_MaterialCommunityIcons.default, { name: 'map-marker', size: 35, color: _colors.default.accent, __source: { fileName: _jsxFileName, lineNumber: 21 } }));
+};
+
+/* istanbul ignore next */cov_i8gjyz2aa.s[12]++;
+MapMarker.propTypes = {
+  id: _propTypes.default.string,
+  description: _propTypes.default.string,
+  latitude: _propTypes.default.number,
+  longitude: _propTypes.default.number,
+  title: _propTypes.default.string };var _default = /* istanbul ignore next */(cov_i8gjyz2aa.s[13]++, MapMarker); /* istanbul ignore next */cov_i8gjyz2aa.s[14]++;
+exports.default = _default;

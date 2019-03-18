@@ -1,0 +1,29 @@
+9c69fea5c8e50b5ece1593763a5d29ab
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _react = _interopRequireDefault(require("react"));
+var _reactRedux = require("react-redux");
+var _reactTestRenderer = _interopRequireDefault(require("react-test-renderer"));
+var _reduxMockStore = _interopRequireDefault(require("redux-mock-store"));
+var _reduxThunk = _interopRequireDefault(require("redux-thunk"));
+var _main = _interopRequireDefault(require("../../app/container/main"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/__tests__/containers/main.spec.js";
+
+var mockStore = (0, _reduxMockStore.default)([_reduxThunk.default]);
+
+var initialState = {
+  markers: [] };
+
+var store;
+
+describe('Main Container', function () {
+  beforeEach(function () {
+    store = mockStore(initialState);
+  });
+
+  it('render main container', function () {
+    var rendered = _reactTestRenderer.default.create(
+    _react.default.createElement(_reactRedux.Provider, { store: store, __source: { fileName: _jsxFileName, lineNumber: 22 } },
+    _react.default.createElement(_main.default, { __source: { fileName: _jsxFileName, lineNumber: 23 } })));
+
+
+    expect(rendered).toMatchSnapshot();
+  });
+});

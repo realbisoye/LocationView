@@ -1,0 +1,30 @@
+8c1cd6d786b1aacf156e0deefedfd0da
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _react = _interopRequireDefault(require("react"));
+var _reactNative = require("react-native");
+var _MaterialCommunityIcons = _interopRequireDefault(require("react-native-vector-icons/dist/MaterialCommunityIcons"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _styles = _interopRequireDefault(require("./styles"));
+var _colors = _interopRequireDefault(require("./colors"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/appBar.js";
+
+var AppBar = function AppBar(props) {return (
+    _react.default.createElement(_reactNative.View, { style: [_styles.default.appBar, {
+        backgroundColor: props.light ? _colors.default.appBarLight : _colors.default.appBarDark }], __source: { fileName: _jsxFileName, lineNumber: 9 } },
+
+
+    _react.default.createElement(_reactNative.TouchableOpacity, { testID: 'menuButton', onPress: props.onMenuClick, __source: { fileName: _jsxFileName, lineNumber: 13 } },
+    _react.default.createElement(_MaterialCommunityIcons.default, { name: props.menuIconName, size: 25, color: _colors.default.primaryText, __source: { fileName: _jsxFileName, lineNumber: 14 } })),
+
+    _react.default.createElement(_reactNative.Text, { testID: 'apptitle', style: _styles.default.appBarTitle, __source: { fileName: _jsxFileName, lineNumber: 16 } },
+    props.title)));};
+
+
+
+
+AppBar.propTypes = {
+  title: _propTypes.default.string,
+  menuIconName: _propTypes.default.string,
+  onMenuClick: _propTypes.default.func,
+  light: _propTypes.default.bool };var _default =
+
+
+AppBar;exports.default = _default;

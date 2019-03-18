@@ -1,0 +1,82 @@
+731327e2180ade4451ee3f05c9b1a395
+"use strict";var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");var actions = _interopRequireWildcard(require("../../app/actions"));
+var _reducers = _interopRequireWildcard(require("../../app/reducers"));
+
+describe('Reducers', function () {
+  it('sets loading state', function () {
+    var action = {
+      type: actions.actionTypes.LOADING };
+
+
+    var nextState = (0, _reducers.default)(_reducers.initialState, action);
+
+    expect(nextState.loading).toEqual(true);
+  });
+
+  it('receives and store markers', function () {
+    var action = {
+      payload: [{
+        longitude: -74.044502,
+        latitude: 40.689247,
+        description: 'Liberty is fine',
+        title: 'Status Of Liberty' }],
+
+      type: actions.actionTypes.RECEIVE_MARKERS };
+
+
+    var nextState = (0, _reducers.default)(_reducers.initialState, action);
+
+    expect(nextState.markers.length).toEqual(1);
+    expect(nextState.markers).toEqual(action.payload);
+  });
+
+  it('save new added marker', function () {
+    var action = {
+      payload: {
+        longitude: -73.968285,
+        latitude: 40.785091,
+        description: 'Central Park playground',
+        title: 'Central Park' },
+
+      type: actions.actionTypes.CREATE_MARKER };
+
+
+    _reducers.initialState.markers = [{
+      longitude: -74.044502,
+      latitude: 40.689247,
+      description: 'Liberty is fine',
+      title: 'Status Of Liberty' }];
+
+
+    var nextState = (0, _reducers.default)(_reducers.initialState, action);
+
+    expect(nextState.markers.length).toEqual(2);
+    expect(nextState.markers).toContainEqual(action.payload);
+  });
+
+  it('update marker data', function () {
+    var action = {
+      payload: {
+        _id: 1,
+        longitude: -73.968285,
+        latitude: 40.785091,
+        description: 'Central Park playground updated',
+        title: 'Central Park' },
+
+      type: actions.actionTypes.UPDATE_MARKER };
+
+
+    _reducers.initialState.markers = [{
+      _id: 1,
+      longitude: -74.044502,
+      latitude: 40.689247,
+      description: 'Liberty is fine',
+      title: 'Status Of Liberty' }];
+
+
+    var nextState = (0, _reducers.default)(_reducers.initialState, action);
+
+    expect(nextState.markers).toContainEqual(action.payload);
+    expect(nextState.markers[0].description).toEqual(action.payload.description);
+  });
+});

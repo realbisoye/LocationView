@@ -1,0 +1,117 @@
+e7ef1364d998a47bc1767492efe73e35
+"use strict";
+
+/* istanbul ignore next */var cov_23ubzyqul = function () {
+  var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/styles.js",
+      hash = "2299ec0443c947ab250aea2f497c55fdb37f478b",
+      Function = function () {}.constructor,
+      global = new Function('return this')(),
+      gcv = "__coverage__",
+      coverageData = {
+    path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/styles.js",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 13
+        },
+        end: {
+          line: 1,
+          column: 75
+        }
+      },
+      "1": {
+        start: {
+          line: 1,
+          column: 75
+        },
+        end: {
+          line: 1,
+          column: 100
+        }
+      },
+      "2": {
+        start: {
+          line: 1,
+          column: 119
+        },
+        end: {
+          line: 1,
+          column: 142
+        }
+      },
+      "3": {
+        start: {
+          line: 3,
+          column: 13
+        },
+        end: {
+          line: 17,
+          column: 21
+        }
+      },
+      "4": {
+        start: {
+          line: 21,
+          column: 0
+        },
+        end: {
+          line: 21,
+          column: 6
+        }
+      },
+      "5": {
+        start: {
+          line: 21,
+          column: 7
+        },
+        end: {
+          line: 21,
+          column: 34
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    f: {},
+    b: {},
+    _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+  },
+      coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+cov_23ubzyqul.s[0]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_23ubzyqul.s[1]++;
+exports.default = void 0;var _reactNative = /* istanbul ignore next */(cov_23ubzyqul.s[2]++, require("react-native"));
+
+var styles = /* istanbul ignore next */(cov_23ubzyqul.s[3]++, _reactNative.StyleSheet.create({
+  appBar: {
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'row',
+    maxHeight: '5%',
+    paddingHorizontal: 20,
+    top: 0,
+    width: '100%' },
+
+  appBarTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginLeft: '22%',
+    zIndex: 1000 } }));var _default = /* istanbul ignore next */(cov_23ubzyqul.s[4]++, styles); /* istanbul ignore next */cov_23ubzyqul.s[5]++;
+exports.default = _default;

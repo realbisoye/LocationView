@@ -1,0 +1,31 @@
+c22cdd7f4f12ea0890709fbe96c16564
+"use strict";var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));var _reduxMockStore = _interopRequireDefault(require("redux-mock-store"));
+var _reduxThunk = _interopRequireDefault(require("redux-thunk"));
+var actions = _interopRequireWildcard(require("../../app/actions"));
+
+var middlewares = [_reduxThunk.default];
+var mockStore = (0, _reduxMockStore.default)(middlewares);
+
+describe('Actions', function () {
+  it('fetchMarkers return markers', function _callee() {var store, actionData, dispatched;return _regenerator.default.async(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+            store = mockStore();
+            actionData = [{
+              type: 'LOADING' },
+            {
+              type: 'RECEIVE_MARKERS',
+              markers: [{
+                longitude: -74.044502,
+                latitude: 40.689247,
+                description: 'Liberty is fine',
+                title: 'Status Of Liberty' }] }];_context.next = 4;return _regenerator.default.awrap(
+
+
+
+            store.dispatch(actions.fetchMarkers()));case 4:
+            dispatched = store.getActions();
+            console.log(dispatched, 'DATAT');
+            expect(dispatched[0].type).toEqual(actionData[0].type);
+            expect(dispatched[1].type).toEqual(actionData[1].type);
+            expect(dispatched[1].payload).toEqual(actionData.markers);case 9:case "end":return _context.stop();}}}, null, this);});
+
+});

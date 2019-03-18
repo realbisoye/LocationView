@@ -1,0 +1,28 @@
+7572b39a391f511a0681033cef8fd222
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));var _reactNative = require("react-native");
+var _colors = _interopRequireDefault(require("../shared/colors"));
+
+var styles = _reactNative.StyleSheet.create({
+  map: (0, _objectSpread2.default)({},
+  _reactNative.StyleSheet.absoluteFillObject),
+
+  mapWrapper: {
+    flex: 1,
+    height: '100%',
+    width: '100%' },
+
+  texts: {
+    color: _colors.default.primaryText,
+    fontSize: 30,
+    fontWeight: 'bold',
+    zIndex: 1000 },
+
+  wrapper: {
+    alignItems: 'center',
+    backgroundColor: _colors.default.appBarDark,
+    flex: 1,
+    flexDirection: 'column' } });var _default =
+
+
+
+styles;exports.default = _default;

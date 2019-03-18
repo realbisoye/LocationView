@@ -1,0 +1,1072 @@
+17f90a8898323d27f5f0cb2810322263
+"use strict";
+
+/* istanbul ignore next */var cov_19iok91hsr = function () {
+  var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/main/index.js",
+      hash = "a76f6ea34422139d12a114f612a5b84aec281ba9",
+      Function = function () {}.constructor,
+      global = new Function('return this')(),
+      gcv = "__coverage__",
+      coverageData = {
+    path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/main/index.js",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 42
+        },
+        end: {
+          line: 1,
+          column: 97
+        }
+      },
+      "1": {
+        start: {
+          line: 1,
+          column: 98
+        },
+        end: {
+          line: 1,
+          column: 160
+        }
+      },
+      "2": {
+        start: {
+          line: 1,
+          column: 160
+        },
+        end: {
+          line: 1,
+          column: 185
+        }
+      },
+      "3": {
+        start: {
+          line: 1,
+          column: 208
+        },
+        end: {
+          line: 1,
+          column: 280
+        }
+      },
+      "4": {
+        start: {
+          line: 1,
+          column: 301
+        },
+        end: {
+          line: 1,
+          column: 370
+        }
+      },
+      "5": {
+        start: {
+          line: 1,
+          column: 405
+        },
+        end: {
+          line: 1,
+          column: 488
+        }
+      },
+      "6": {
+        start: {
+          line: 1,
+          column: 512
+        },
+        end: {
+          line: 1,
+          column: 584
+        }
+      },
+      "7": {
+        start: {
+          line: 1,
+          column: 602
+        },
+        end: {
+          line: 1,
+          column: 668
+        }
+      },
+      "8": {
+        start: {
+          line: 1,
+          column: 699
+        },
+        end: {
+          line: 1,
+          column: 778
+        }
+      },
+      "9": {
+        start: {
+          line: 1,
+          column: 792
+        },
+        end: {
+          line: 1,
+          column: 832
+        }
+      },
+      "10": {
+        start: {
+          line: 2,
+          column: 19
+        },
+        end: {
+          line: 2,
+          column: 42
+        }
+      },
+      "11": {
+        start: {
+          line: 3,
+          column: 23
+        },
+        end: {
+          line: 3,
+          column: 75
+        }
+      },
+      "12": {
+        start: {
+          line: 4,
+          column: 27
+        },
+        end: {
+          line: 4,
+          column: 84
+        }
+      },
+      "13": {
+        start: {
+          line: 5,
+          column: 17
+        },
+        end: {
+          line: 5,
+          column: 62
+        }
+      },
+      "14": {
+        start: {
+          line: 6,
+          column: 14
+        },
+        end: {
+          line: 6,
+          column: 65
+        }
+      },
+      "15": {
+        start: {
+          line: 7,
+          column: 14
+        },
+        end: {
+          line: 7,
+          column: 57
+        }
+      },
+      "16": {
+        start: {
+          line: 8,
+          column: 17
+        },
+        end: {
+          line: 8,
+          column: 64
+        }
+      },
+      "17": {
+        start: {
+          line: 9,
+          column: 18
+        },
+        end: {
+          line: 9,
+          column: 66
+        }
+      },
+      "18": {
+        start: {
+          line: 9,
+          column: 86
+        },
+        end: {
+          line: 9,
+          column: 167
+        }
+      },
+      "19": {
+        start: {
+          line: 11,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 37
+        }
+      },
+      "20": {
+        start: {
+          line: 11,
+          column: 46
+        },
+        end: {
+          line: 11,
+          column: 67
+        }
+      },
+      "21": {
+        start: {
+          line: 11,
+          column: 77
+        },
+        end: {
+          line: 11,
+          column: 99
+        }
+      },
+      "22": {
+        start: {
+          line: 12,
+          column: 19
+        },
+        end: {
+          line: 12,
+          column: 33
+        }
+      },
+      "23": {
+        start: {
+          line: 13,
+          column: 15
+        },
+        end: {
+          line: 13,
+          column: 23
+        }
+      },
+      "24": {
+        start: {
+          line: 14,
+          column: 16
+        },
+        end: {
+          line: 14,
+          column: 25
+        }
+      },
+      "25": {
+        start: {
+          line: 15,
+          column: 21
+        },
+        end: {
+          line: 15,
+          column: 27
+        }
+      },
+      "26": {
+        start: {
+          line: 16,
+          column: 22
+        },
+        end: {
+          line: 16,
+          column: 51
+        }
+      },
+      "27": {
+        start: {
+          line: 18,
+          column: 20
+        },
+        end: {
+          line: 22,
+          column: 35
+        }
+      },
+      "28": {
+        start: {
+          line: 25,
+          column: 22
+        },
+        end: {
+          line: 29,
+          column: 11
+        }
+      },
+      "29": {
+        start: {
+          line: 32,
+          column: 7
+        },
+        end: {
+          line: 116,
+          column: 49
+        }
+      },
+      "30": {
+        start: {
+          line: 32,
+          column: 36
+        },
+        end: {
+          line: 32,
+          column: 84
+        }
+      },
+      "31": {
+        start: {
+          line: 35,
+          column: 34
+        },
+        end: {
+          line: 35,
+          column: 76
+        }
+      },
+      "32": {
+        start: {
+          line: 36,
+          column: 4
+        },
+        end: {
+          line: 36,
+          column: 114
+        }
+      },
+      "33": {
+        start: {
+          line: 37,
+          column: 4
+        },
+        end: {
+          line: 38,
+          column: 24
+        }
+      },
+      "34": {
+        start: {
+          line: 40,
+          column: 4
+        },
+        end: {
+          line: 40,
+          column: 130
+        }
+      },
+      "35": {
+        start: {
+          line: 40,
+          column: 130
+        },
+        end: {
+          line: 40,
+          column: 143
+        }
+      },
+      "36": {
+        start: {
+          line: 41,
+          column: 3
+        },
+        end: {
+          line: 116,
+          column: 10
+        }
+      },
+      "37": {
+        start: {
+          line: 44,
+          column: 6
+        },
+        end: {
+          line: 44,
+          column: 30
+        }
+      },
+      "38": {
+        start: {
+          line: 48,
+          column: 24
+        },
+        end: {
+          line: 53,
+          column: 8
+        }
+      },
+      "39": {
+        start: {
+          line: 49,
+          column: 8
+        },
+        end: {
+          line: 51,
+          column: 38
+        }
+      },
+      "40": {
+        start: {
+          line: 54,
+          column: 6
+        },
+        end: {
+          line: 59,
+          column: 7
+        }
+      },
+      "41": {
+        start: {
+          line: 55,
+          column: 8
+        },
+        end: {
+          line: 57,
+          column: 42
+        }
+      },
+      "42": {
+        start: {
+          line: 63,
+          column: 21
+        },
+        end: {
+          line: 63,
+          column: 57
+        }
+      },
+      "43": {
+        start: {
+          line: 64,
+          column: 6
+        },
+        end: {
+          line: 65,
+          column: 30
+        }
+      },
+      "44": {
+        start: {
+          line: 69,
+          column: 18
+        },
+        end: {
+          line: 69,
+          column: 22
+        }
+      },
+      "45": {
+        start: {
+          line: 70,
+          column: 24
+        },
+        end: {
+          line: 70,
+          column: 67
+        }
+      },
+      "46": {
+        start: {
+          line: 71,
+          column: 16
+        },
+        end: {
+          line: 71,
+          column: 34
+        }
+      },
+      "47": {
+        start: {
+          line: 72,
+          column: 6
+        },
+        end: {
+          line: 109,
+          column: 113
+        }
+      },
+      "48": {
+        start: {
+          line: 95,
+          column: 35
+        },
+        end: {
+          line: 95,
+          column: 53
+        }
+      },
+      "49": {
+        start: {
+          line: 102,
+          column: 46
+        },
+        end: {
+          line: 109,
+          column: 105
+        }
+      },
+      "50": {
+        start: {
+          line: 116,
+          column: 10
+        },
+        end: {
+          line: 116,
+          column: 22
+        }
+      },
+      "51": {
+        start: {
+          line: 116,
+          column: 50
+        },
+        end: {
+          line: 116,
+          column: 66
+        }
+      },
+      "52": {
+        start: {
+          line: 119,
+          column: 0
+        },
+        end: {
+          line: 128,
+          column: 42
+        }
+      },
+      "53": {
+        start: {
+          line: 131,
+          column: 0
+        },
+        end: {
+          line: 131,
+          column: 4
+        }
+      },
+      "54": {
+        start: {
+          line: 131,
+          column: 5
+        },
+        end: {
+          line: 131,
+          column: 32
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 32,
+            column: 7
+          },
+          end: {
+            line: 32,
+            column: 8
+          }
+        },
+        loc: {
+          start: {
+            line: 32,
+            column: 35
+          },
+          end: {
+            line: 116,
+            column: 23
+          }
+        },
+        line: 32
+      },
+      "1": {
+        name: "Main",
+        decl: {
+          start: {
+            line: 35,
+            column: 11
+          },
+          end: {
+            line: 35,
+            column: 15
+          }
+        },
+        loc: {
+          start: {
+            line: 35,
+            column: 23
+          },
+          end: {
+            line: 41,
+            column: 3
+          }
+        },
+        line: 35
+      },
+      "2": {
+        name: "componentDidMount",
+        decl: {
+          start: {
+            line: 41,
+            column: 81
+          },
+          end: {
+            line: 41,
+            column: 98
+          }
+        },
+        loc: {
+          start: {
+            line: 43,
+            column: 4
+          },
+          end: {
+            line: 45,
+            column: 5
+          }
+        },
+        line: 43
+      },
+      "3": {
+        name: "componentDidUpdate",
+        decl: {
+          start: {
+            line: 45,
+            column: 54
+          },
+          end: {
+            line: 45,
+            column: 72
+          }
+        },
+        loc: {
+          start: {
+            line: 47,
+            column: 4
+          },
+          end: {
+            line: 60,
+            column: 5
+          }
+        },
+        line: 47
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 48,
+            column: 47
+          },
+          end: {
+            line: 48,
+            column: 48
+          }
+        },
+        loc: {
+          start: {
+            line: 48,
+            column: 65
+          },
+          end: {
+            line: 53,
+            column: 7
+          }
+        },
+        line: 48
+      },
+      "5": {
+        name: "openMarkers",
+        decl: {
+          start: {
+            line: 60,
+            column: 47
+          },
+          end: {
+            line: 60,
+            column: 58
+          }
+        },
+        loc: {
+          start: {
+            line: 62,
+            column: 12
+          },
+          end: {
+            line: 67,
+            column: 5
+          }
+        },
+        line: 62
+      },
+      "6": {
+        name: "render",
+        decl: {
+          start: {
+            line: 67,
+            column: 42
+          },
+          end: {
+            line: 67,
+            column: 48
+          }
+        },
+        loc: {
+          start: {
+            line: 69,
+            column: 4
+          },
+          end: {
+            line: 116,
+            column: 5
+          }
+        },
+        line: 69
+      },
+      "7": {
+        name: "ref",
+        decl: {
+          start: {
+            line: 95,
+            column: 24
+          },
+          end: {
+            line: 95,
+            column: 27
+          }
+        },
+        loc: {
+          start: {
+            line: 95,
+            column: 34
+          },
+          end: {
+            line: 95,
+            column: 54
+          }
+        },
+        line: 95
+      },
+      "8": {
+        name: "(anonymous_8)",
+        decl: {
+          start: {
+            line: 102,
+            column: 20
+          },
+          end: {
+            line: 102,
+            column: 21
+          }
+        },
+        loc: {
+          start: {
+            line: 102,
+            column: 45
+          },
+          end: {
+            line: 109,
+            column: 106
+          }
+        },
+        line: 102
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 54,
+            column: 6
+          },
+          end: {
+            line: 59,
+            column: 7
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 54,
+            column: 6
+          },
+          end: {
+            line: 59,
+            column: 7
+          }
+        }, {
+          start: {
+            line: 54,
+            column: 6
+          },
+          end: {
+            line: 59,
+            column: 7
+          }
+        }],
+        line: 54
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 63,
+            column: 21
+          },
+          end: {
+            line: 63,
+            column: 57
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 63,
+            column: 30
+          },
+          end: {
+            line: 63,
+            column: 34
+          }
+        }, {
+          start: {
+            line: 63,
+            column: 37
+          },
+          end: {
+            line: 63,
+            column: 57
+          }
+        }],
+        line: 63
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "38": 0,
+      "39": 0,
+      "40": 0,
+      "41": 0,
+      "42": 0,
+      "43": 0,
+      "44": 0,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 0,
+      "51": 0,
+      "52": 0,
+      "53": 0,
+      "54": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0]
+    },
+    _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+  },
+      coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+var _interopRequireDefault = /* istanbul ignore next */(cov_19iok91hsr.s[0]++, require("@babel/runtime/helpers/interopRequireDefault")); /* istanbul ignore next */cov_19iok91hsr.s[1]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_19iok91hsr.s[2]++;
+exports.default = void 0;var _classCallCheck2 = /* istanbul ignore next */(cov_19iok91hsr.s[3]++, _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck")));var _createClass2 = /* istanbul ignore next */(cov_19iok91hsr.s[4]++, _interopRequireDefault(require("@babel/runtime/helpers/createClass")));var _possibleConstructorReturn2 = /* istanbul ignore next */(cov_19iok91hsr.s[5]++, _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn")));var _getPrototypeOf2 = /* istanbul ignore next */(cov_19iok91hsr.s[6]++, _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf")));var _inherits2 = /* istanbul ignore next */(cov_19iok91hsr.s[7]++, _interopRequireDefault(require("@babel/runtime/helpers/inherits")));var _assertThisInitialized2 = /* istanbul ignore next */(cov_19iok91hsr.s[8]++, _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized")));var _react = /* istanbul ignore next */(cov_19iok91hsr.s[9]++, _interopRequireDefault(require("react")));
+var _reactNative = /* istanbul ignore next */(cov_19iok91hsr.s[10]++, require("react-native"));
+var _reactNativeMaps = /* istanbul ignore next */(cov_19iok91hsr.s[11]++, _interopRequireDefault(require("react-native-maps")));
+var _reactNativeSideMenu = /* istanbul ignore next */(cov_19iok91hsr.s[12]++, _interopRequireDefault(require("react-native-side-menu")));
+var _propTypes = /* istanbul ignore next */(cov_19iok91hsr.s[13]++, _interopRequireDefault(require("prop-types")));
+var _appBar = /* istanbul ignore next */(cov_19iok91hsr.s[14]++, _interopRequireDefault(require("../shared/appBar")));
+var _styles = /* istanbul ignore next */(cov_19iok91hsr.s[15]++, _interopRequireDefault(require("./styles")));
+var _mapMarker = /* istanbul ignore next */(cov_19iok91hsr.s[16]++, _interopRequireDefault(require("../mapMarker")));
+var _markerList = /* istanbul ignore next */(cov_19iok91hsr.s[17]++, _interopRequireDefault(require("../markerList")));var _jsxFileName = /* istanbul ignore next */(cov_19iok91hsr.s[18]++, "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/main/index.js");var _Dimensions$get = /* istanbul ignore next */(cov_19iok91hsr.s[19]++, _reactNative.Dimensions.get('window')),
+    width = /* istanbul ignore next */(cov_19iok91hsr.s[20]++, _Dimensions$get.width),
+    height = /* istanbul ignore next */(cov_19iok91hsr.s[21]++, _Dimensions$get.height);
+var ASPECT_RATIO = /* istanbul ignore next */(cov_19iok91hsr.s[22]++, width / height);
+var LATITUDE = /* istanbul ignore next */(cov_19iok91hsr.s[23]++, 37.78825);
+var LONGITUDE = /* istanbul ignore next */(cov_19iok91hsr.s[24]++, -122.4324);
+var LATITUDE_DELTA = /* istanbul ignore next */(cov_19iok91hsr.s[25]++, 0.0922);
+var LONGITUDE_DELTA = /* istanbul ignore next */(cov_19iok91hsr.s[26]++, LATITUDE_DELTA * ASPECT_RATIO);
+
+var initialRegion = /* istanbul ignore next */(cov_19iok91hsr.s[27]++, {
+  latitude: LATITUDE,
+  latitudeDelta: LATITUDE_DELTA,
+  longitude: LONGITUDE,
+  longitudeDelta: LONGITUDE_DELTA });
+
+var DEFAULT_PADDING = /* istanbul ignore next */(cov_19iok91hsr.s[28]++, {
+  bottom: 40,
+  left: 40,
+  right: 40,
+  top: 40 });var Main = /* istanbul ignore next */(cov_19iok91hsr.s[29]++, function (_React$Component) {
+  /* istanbul ignore next */cov_19iok91hsr.f[0]++;
+  cov_19iok91hsr.s[30]++;
+  (0, _inherits2.default)(Main, _React$Component);
+
+  function Main(props) {
+    /* istanbul ignore next */cov_19iok91hsr.f[1]++;
+    var _this; /* istanbul ignore next */cov_19iok91hsr.s[31]++;
+    (0, _classCallCheck2.default)(this, Main);
+    /* istanbul ignore next */cov_19iok91hsr.s[32]++;
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Main).call(this, props));
+    /* istanbul ignore next */cov_19iok91hsr.s[33]++;
+    _this.state = {
+      openMenu: false };
+
+    /* istanbul ignore next */cov_19iok91hsr.s[34]++;
+    _this.openMarkers = _this.openMarkers.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this))); /* istanbul ignore next */cov_19iok91hsr.s[35]++;
+    return _this;
+  } /* istanbul ignore next */cov_19iok91hsr.s[36]++;
+  (0, _createClass2.default)(Main, [{ key: "componentDidMount", value: function componentDidMount() {
+      /* istanbul ignore next */cov_19iok91hsr.f[2]++;
+      cov_19iok91hsr.s[37]++;
+
+      this.props.getMarkers();
+    } }, { key: "componentDidUpdate", value: function componentDidUpdate() {
+      /* istanbul ignore next */cov_19iok91hsr.f[3]++;
+
+      var coordinates = /* istanbul ignore next */(cov_19iok91hsr.s[38]++, this.props.markers.map(function (marker) {
+        /* istanbul ignore next */cov_19iok91hsr.f[4]++;
+        cov_19iok91hsr.s[39]++;
+
+        return {
+          longitude: marker.longitude,
+          latitude: marker.latitude };
+      }));
+      /* istanbul ignore next */cov_19iok91hsr.s[40]++;
+      if (coordinates.length) {
+        /* istanbul ignore next */cov_19iok91hsr.b[0][0]++;
+        cov_19iok91hsr.s[41]++;
+
+        this.map.fitToCoordinates(coordinates, {
+          animated: true,
+          edgePadding: DEFAULT_PADDING });
+      } else /* istanbul ignore next */{
+        cov_19iok91hsr.b[0][1]++;
+      }
+    } }, { key: "openMarkers", value: function openMarkers(isOpen) {
+      /* istanbul ignore next */cov_19iok91hsr.f[5]++;
+
+      var openMenu = /* istanbul ignore next */(cov_19iok91hsr.s[42]++, isOpen ? /* istanbul ignore next */(cov_19iok91hsr.b[1][0]++, true) : /* istanbul ignore next */(cov_19iok91hsr.b[1][1]++, !this.state.openMenu));
+      /* istanbul ignore next */cov_19iok91hsr.s[43]++;
+      this.setState({
+        openMenu: openMenu });
+    } }, { key: "render", value: function render() {
+      /* istanbul ignore next */cov_19iok91hsr.f[6]++;
+      var _this2 = /* istanbul ignore next */(cov_19iok91hsr.s[44]++, this);
+      var screenWidth = /* istanbul ignore next */(cov_19iok91hsr.s[45]++, _reactNative.Dimensions.get('window').width);var markers = /* istanbul ignore next */(cov_19iok91hsr.s[46]++, this.props.markers);
+      /* istanbul ignore next */cov_19iok91hsr.s[47]++;
+      return _react.default.createElement(_reactNativeSideMenu.default, {
+        menu: _react.default.createElement(_markerList.default, {
+          markers: markers,
+          addMarker: this.props.addMarker,
+          updateMarker: this.props.updateMarker,
+          deleteMarker: this.props.deleteMarker,
+          openForm: this.props.openForm,
+          toggleForm: this.props.toggleMarkerForm, __source: { fileName: _jsxFileName, lineNumber: 75 } }),
+
+        isOpen: this.state.openMenu,
+        onChange: this.openMarkers,
+        openMenuOffset: screenWidth * 0.85, __source: { fileName: _jsxFileName, lineNumber: 73 } }, _react.default.createElement(_reactNative.SafeAreaView, { style: _styles.default.wrapper, __source: { fileName: _jsxFileName, lineNumber: 87 } }, _react.default.createElement(_appBar.default, {
+        title: 'Location View',
+        menuIconName: 'map-marker-multiple',
+        onMenuClick: this.openMarkers, __source: { fileName: _jsxFileName, lineNumber: 88 } }), _react.default.createElement(_reactNative.View, { style: _styles.default.mapWrapper, __source: { fileName: _jsxFileName, lineNumber: 93 } }, _react.default.createElement(_reactNativeMaps.default, {
+        ref: function ref(_ref) {
+          /* istanbul ignore next */cov_19iok91hsr.f[7]++;
+          cov_19iok91hsr.s[48]++;
+          _this2.map = _ref;
+        },
+        provider: 'google',
+        style: _styles.default.map,
+        showsUserLocation: true,
+        loadingEnabled: true,
+        region: initialRegion, __source: { fileName: _jsxFileName, lineNumber: 94 } }, markers.map(function (marker, index) {
+        /* istanbul ignore next */cov_19iok91hsr.f[8]++;
+        cov_19iok91hsr.s[49]++;
+        return _react.default.createElement(_mapMarker.default, {
+          key: marker.longitude + marker.latitude + index,
+          longitude: marker.longitude,
+          latitude: marker.latitude,
+          id: marker.id,
+          title: marker.title,
+          description: marker.description, __source: { fileName: _jsxFileName, lineNumber: 103 } });
+      })))));
+    } }]); /* istanbul ignore next */cov_19iok91hsr.s[50]++;
+  return Main;
+}(_react.default.Component)); /* istanbul ignore next */cov_19iok91hsr.s[51]++;
+Main.map = null;
+
+/* istanbul ignore next */cov_19iok91hsr.s[52]++;
+Main.propTypes = {
+  markers: _propTypes.default.arrayOf(_propTypes.default.object),
+  loading: _propTypes.default.bool,
+  error: _propTypes.default.bool,
+  openForm: _propTypes.default.bool,
+  getMarkers: _propTypes.default.func,
+  addMarker: _propTypes.default.func,
+  toggleMarkerForm: _propTypes.default.func,
+  updateMarker: _propTypes.default.func,
+  deleteMarker: _propTypes.default.func };var _default = /* istanbul ignore next */(cov_19iok91hsr.s[53]++, Main); /* istanbul ignore next */cov_19iok91hsr.s[54]++;
+exports.default = _default;

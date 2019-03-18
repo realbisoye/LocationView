@@ -1,0 +1,32 @@
+85659440e22701079ee6c35e178a5b96
+jest.mock('./app/apiRequest', function () {
+  var MockAdapter = require('axios-mock-adapter');
+  var axios = require('axios');
+  var mock = new MockAdapter(axios);
+  return function (path, method) {var data = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+    var responses = [
+    ['GET', '/markers', 200, [{
+      longitude: -74.044502,
+      latitude: 40.689247,
+      description: 'Liberty is fine',
+      title: 'Status Of Liberty' }]],
+
+    ['POST', '/markers', 200, data],
+    ['PATCH', '/markers/1', 200, {
+      longitude: -73.968285,
+      latitude: 40.785091,
+      description: 'Central Park playground update',
+      title: 'Central Park' }],
+
+    ['DELETE', '/markers/1', 204]];
+
+    return mock.onAny().reply(function (config) {var _responses$shift =
+      responses.shift(),_responses$shift2 = require("@babel/runtime/helpers/toArray")(_responses$shift),response = _responses$shift2.slice(0);
+      if (config.url === path && config.method.toUpperCase() === method) return response;
+
+      return [500, {}];
+    });
+  };
+});
+
+jest.mock('react-native-maps', function () {return function () {return 'MapView';};});

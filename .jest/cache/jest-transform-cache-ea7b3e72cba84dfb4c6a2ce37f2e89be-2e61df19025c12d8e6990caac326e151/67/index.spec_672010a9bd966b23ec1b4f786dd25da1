@@ -1,0 +1,22 @@
+c8487485d4e176b0fdc4d7cfc5a878a4
+"use strict";var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");var actions = _interopRequireWildcard(require("../../app/actions"));
+var _reducers = _interopRequireWildcard(require("../../app/reducers"));
+
+describe('Reducers', function () {
+  it('receives and store markers', function () {
+    var action = {
+      payload: [{
+        longitude: -74.044502,
+        latitude: 40.689247,
+        description: 'Liberty is fine',
+        title: 'Status Of Liberty' }],
+
+      type: actions.actionTypes.RECEIVE_MARKERS };
+
+
+    var nextState = (0, _reducers.default)(_reducers.initialState, action);
+
+    expect(nextState.markers.length).toEqual(1);
+    expect(nextState.markers).toEqual(action.payload);
+  });
+});

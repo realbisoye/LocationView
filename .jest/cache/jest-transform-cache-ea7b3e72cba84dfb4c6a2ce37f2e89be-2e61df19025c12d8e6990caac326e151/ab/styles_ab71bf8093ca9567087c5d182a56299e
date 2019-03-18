@@ -1,0 +1,56 @@
+4a53c368d1108ad85c9db3d19ce28a7b
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _reactNative = require("react-native");
+var _colors = _interopRequireDefault(require("../shared/colors"));
+
+var styles = _reactNative.StyleSheet.create({
+  list: {
+    borderColor: _colors.default.appBarDark,
+    borderTopWidth: 2,
+    flex: 1,
+    marginTop: 20 },
+
+  listItemCoordinateText: {
+    color: _colors.default.primaryText,
+    fontSize: 11,
+    marginRight: 5 },
+
+  listItemCoordinates: {
+    flexDirection: 'row' },
+
+  listItemDescription: {
+    color: _colors.default.primaryText,
+    fontSize: 14,
+    marginBottom: 5 },
+
+  listItemDetails: {
+    flex: 1,
+    marginLeft: '5%' },
+
+  listItemTitle: {
+    color: _colors.default.accent,
+    fontSize: 20,
+    fontWeight: '500',
+    marginBottom: 5 },
+
+  listItemTitleWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginRight: 5 },
+
+  listItemWrapper: {
+    borderBottomWidth: 1,
+    borderColor: _colors.default.appBarDark,
+    flexDirection: 'row',
+    height: 100,
+    marginHorizontal: 20,
+    paddingVertical: 20,
+    zIndex: 1000 },
+
+  listWrapper: {
+    backgroundColor: _colors.default.appBarLight,
+    flex: 1,
+    flexDirection: 'column' } });var _default =
+
+
+
+styles;exports.default = _default;

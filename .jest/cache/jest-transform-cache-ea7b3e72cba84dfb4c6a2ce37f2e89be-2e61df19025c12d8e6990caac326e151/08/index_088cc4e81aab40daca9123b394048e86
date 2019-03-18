@@ -1,0 +1,35 @@
+005b35809473ed38e89b3554d8e8e5d3
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _react = _interopRequireDefault(require("react"));
+var _reactNativeMaps = require("react-native-maps");
+var _MaterialCommunityIcons = _interopRequireDefault(require("react-native-vector-icons/dist/MaterialCommunityIcons"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _colors = _interopRequireDefault(require("../shared/colors"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/mapMarker/index.js";
+
+var MapMarker = function MapMarker(props) {
+  var latlng = {
+    latitude: props.latitude,
+    longitude: props.longitude };
+
+
+  return (
+    _react.default.createElement(_reactNativeMaps.Marker, {
+      flat: true,
+      coordinate: latlng,
+      identifier: props.id,
+      title: props.title,
+      description: props.description, __source: { fileName: _jsxFileName, lineNumber: 14 } },
+
+    _react.default.createElement(_MaterialCommunityIcons.default, { name: 'map-marker', size: 35, color: _colors.default.accent, __source: { fileName: _jsxFileName, lineNumber: 21 } })));
+
+
+};
+
+MapMarker.propTypes = {
+  id: _propTypes.default.string,
+  description: _propTypes.default.string,
+  latitude: _propTypes.default.number,
+  longitude: _propTypes.default.number,
+  title: _propTypes.default.string };var _default =
+
+
+MapMarker;exports.default = _default;

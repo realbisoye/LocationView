@@ -1,0 +1,113 @@
+523ff509e2f15212d84e18f33768865d
+
+
+
+
+
+
+
+
+
+
+
+
+'use strict';
+
+
+
+
+
+
+
+
+function emptyFunction() {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var BackHandler;
+
+if (require('Platform').isTV) {
+  var _tvEventHandler = new (require('TVEventHandler'))();
+  var _backPressSubscriptions = new Set();
+
+  _tvEventHandler.enable(this, function (cmp, evt) {
+    if (evt && evt.eventType === 'menu') {
+      var invokeDefault = true;
+      var subscriptions = Array.from(
+      _backPressSubscriptions.values()).
+      reverse();
+
+      for (var i = 0; i < subscriptions.length; ++i) {
+        if (subscriptions[i]()) {
+          invokeDefault = false;
+          break;
+        }
+      }
+
+      if (invokeDefault) {
+        BackHandler.exitApp();
+      }
+    }
+  });
+
+  BackHandler = {
+    exitApp: emptyFunction,
+
+    addEventListener: function addEventListener(
+    eventName,
+    handler)
+    {
+      _backPressSubscriptions.add(handler);
+      return {
+        remove: function remove() {return BackHandler.removeEventListener(eventName, handler);} };
+
+    },
+
+    removeEventListener: function removeEventListener(
+    eventName,
+    handler)
+    {
+      _backPressSubscriptions.delete(handler);
+    } };
+
+} else {
+  BackHandler = {
+    exitApp: emptyFunction,
+    addEventListener: function addEventListener() {
+      return {
+        remove: emptyFunction };
+
+    },
+    removeEventListener: emptyFunction };
+
+}
+
+module.exports = BackHandler;

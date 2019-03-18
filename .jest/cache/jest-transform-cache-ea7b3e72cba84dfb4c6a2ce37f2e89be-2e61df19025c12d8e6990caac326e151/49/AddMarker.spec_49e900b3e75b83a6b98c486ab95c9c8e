@@ -1,0 +1,77 @@
+e1b427fc9dd77f207aa2b6b823507040
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _react = _interopRequireDefault(require("react"));
+var _reactTestRenderer = _interopRequireDefault(require("react-test-renderer"));
+var _addMarker = _interopRequireDefault(require("../../app/components/addMarker"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/__tests__/components/AddMarker.spec.js";
+
+var marker = {
+  longitude: -73.968285,
+  latitude: 40.785091,
+  description: 'Central Park playground update',
+  title: 'Central Park' };
+
+
+var updateMarker = jest.fn();
+var addMarker = jest.fn();
+var toggleForm = jest.fn();
+
+describe('Add Marker', function () {
+  var rendered = _reactTestRenderer.default.create(
+  _react.default.createElement(_addMarker.default, {
+    showForm: true,
+    isUpdate: false,
+    marker: {},
+    updateMarker: updateMarker,
+    toggleForm: toggleForm,
+    addMarker: addMarker, __source: { fileName: _jsxFileName, lineNumber: 18 } }));
+
+
+
+  it('renders Add New Marker Form', function () {
+    expect(rendered).toMatchSnapshot();
+  });
+
+  it('set value on form value change', function () {
+    rendered.root.instance.setValue('title', 'Menlo Park');
+    expect(rendered.root.instance.state.marker.title).toEqual('Menlo Park');
+  });
+
+  it('set toggle form on request', function () {
+    rendered.root.instance.closeForm();
+    expect(toggleForm).toHaveBeenCalled();
+  });
+
+  it('create marker on submit', function () {
+    rendered.root.instance.submit();
+    expect(addMarker).toHaveBeenCalled();
+  });
+
+  it('renders Update New Marker Form', function () {
+    var updateRendered = _reactTestRenderer.default.create(
+    _react.default.createElement(_addMarker.default, {
+      showForm: true,
+      isUpdate: true,
+      marker: marker,
+      updateMarker: updateMarker,
+      toggleForm: toggleForm,
+      addMarker: addMarker, __source: { fileName: _jsxFileName, lineNumber: 49 } }));
+
+
+    expect(updateRendered).toMatchSnapshot();
+    expect(updateRendered.root.instance.state.marker).toEqual(marker);
+  });
+
+  it('update marker on submit for update', function () {
+    var updateRendered = _reactTestRenderer.default.create(
+    _react.default.createElement(_addMarker.default, {
+      showForm: true,
+      isUpdate: true,
+      marker: marker,
+      updateMarker: updateMarker,
+      toggleForm: toggleForm,
+      addMarker: addMarker, __source: { fileName: _jsxFileName, lineNumber: 64 } }));
+
+
+    updateRendered.root.instance.submit();
+    expect(updateMarker).toHaveBeenCalled();
+  });
+});

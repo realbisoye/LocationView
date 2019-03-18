@@ -1,0 +1,20 @@
+455e205bd8346b24ce69741cea2be46c
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _react = _interopRequireDefault(require("react"));
+var _reactTestRenderer = _interopRequireDefault(require("react-test-renderer"));
+var _mapMarker = _interopRequireDefault(require("../../app/components/mapMarker"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/__tests__/components/MapMarker.spec.js";
+
+describe('Marker', function () {
+  it('renders Marker', function () {
+    var rendered = _reactTestRenderer.default.create(
+    _react.default.createElement(_mapMarker.default, {
+      id: 1,
+      latitude: 40.785091,
+      longitude: -73.968285,
+      description: 'Central Park playground',
+      title: 'Central Park', __source: { fileName: _jsxFileName, lineNumber: 8 } }));
+
+
+
+    expect(rendered).toMatchSnapshot();
+  });
+});

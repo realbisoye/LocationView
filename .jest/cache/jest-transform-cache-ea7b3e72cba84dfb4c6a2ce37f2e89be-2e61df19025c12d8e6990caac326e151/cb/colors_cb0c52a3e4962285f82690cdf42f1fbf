@@ -1,0 +1,95 @@
+50549e50958890742f47e8112c9d02bc
+"use strict";
+
+/* istanbul ignore next */var cov_1kuwn2wtj1 = function () {
+  var path = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/colors.js",
+      hash = "39b00c7881691afceeffc6ca23c073c003a4440b",
+      Function = function () {}.constructor,
+      global = new Function('return this')(),
+      gcv = "__coverage__",
+      coverageData = {
+    path: "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/shared/colors.js",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 13
+        },
+        end: {
+          line: 1,
+          column: 75
+        }
+      },
+      "1": {
+        start: {
+          line: 1,
+          column: 75
+        },
+        end: {
+          line: 1,
+          column: 100
+        }
+      },
+      "2": {
+        start: {
+          line: 1,
+          column: 113
+        },
+        end: {
+          line: 6,
+          column: 28
+        }
+      },
+      "3": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 9,
+          column: 6
+        }
+      },
+      "4": {
+        start: {
+          line: 9,
+          column: 7
+        },
+        end: {
+          line: 9,
+          column: 34
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {},
+    b: {},
+    _coverageSchema: "332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"
+  },
+      coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+cov_1kuwn2wtj1.s[0]++;
+Object.defineProperty(exports, "__esModule", { value: true }); /* istanbul ignore next */cov_1kuwn2wtj1.s[1]++;
+exports.default = void 0;var colors = /* istanbul ignore next */(cov_1kuwn2wtj1.s[2]++, {
+  accent: '#BF41BA',
+  appBarLight: '#C2E098',
+  appBarDark: '#88BF41',
+  primaryText: '#171914',
+  secondaryText: '#E5BECD' });var _default = /* istanbul ignore next */(cov_1kuwn2wtj1.s[3]++, colors); /* istanbul ignore next */cov_1kuwn2wtj1.s[4]++;
+exports.default = _default;

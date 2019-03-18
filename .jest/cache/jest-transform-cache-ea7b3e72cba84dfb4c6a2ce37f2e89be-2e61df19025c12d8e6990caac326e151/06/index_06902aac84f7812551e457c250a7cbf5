@@ -1,0 +1,147 @@
+46a63521fe50faff8d3b82542ecedb32
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized"));var _react = _interopRequireDefault(require("react"));
+var _reactNative = require("react-native");
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _appBar = _interopRequireDefault(require("../shared/appBar"));
+var _styles = _interopRequireDefault(require("./styles"));
+var _colors = _interopRequireDefault(require("../shared/colors"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/addMarker/index.js";var
+
+AddMarker = function (_React$Component) {(0, _inherits2.default)(AddMarker, _React$Component);(0, _createClass2.default)(AddMarker, null, [{ key: "getDerivedStateFromProps", value: function getDerivedStateFromProps(
+    props, state) {
+      var previous = props.marker;
+      var edited = state.marker;
+      if (props.isUpdate) {
+        return {
+          marker: {
+            title: edited.title ? edited.title : previous.title,
+            description: edited.description ? edited.description : previous.description,
+            latitude: edited.latitude ? edited.latitude : JSON.stringify(previous.latitude),
+            longitude: edited.longitude ? edited.longitude : JSON.stringify(previous.longitude) } };
+
+
+      }
+      return {
+        marker: previous };
+
+    } }]);
+
+  function AddMarker(props) {var _this;(0, _classCallCheck2.default)(this, AddMarker);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(AddMarker).call(this, props));
+    _this.state = {
+      marker: {
+        title: '',
+        description: '',
+        longitude: '',
+        latitude: '' } };
+
+
+    _this.closeForm = _this.closeForm.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
+    _this.setValue = _this.setValue.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
+    _this.submit = _this.submit.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));return _this;
+  }(0, _createClass2.default)(AddMarker, [{ key: "setValue", value: function setValue(
+
+    field, value) {
+      var marker = this.state.marker;
+      marker[field] = value;
+      this.setState({
+        marker: marker });
+
+    } }, { key: "closeForm", value: function closeForm()
+
+    {
+      this.setState({
+        marker: {} },
+      this.props.toggleForm);
+    } }, { key: "submit", value: function submit()
+
+    {
+      var marker = this.state.marker;
+      if (this.props.isUpdate) {
+        this.props.updateMarker(this.props.marker._id, marker);
+      } else {
+        this.props.addMarker(marker);
+      }
+      this.setState({
+        marker: {} });
+
+    } }, { key: "render", value: function render()
+
+    {var _this2 = this;
+      var marker = this.state.marker;
+      var hasError = !marker.title || !marker.longitude || !marker.latitude;
+
+      return (
+        _react.default.createElement(_reactNative.Modal, {
+          animationType: "slide",
+          transparent: false,
+          visible: this.props.showForm,
+          onRequestClose: this.closeForm, __source: { fileName: _jsxFileName, lineNumber: 73 } },
+
+        _react.default.createElement(_reactNative.SafeAreaView, { style: _styles.default.modalContent, __source: { fileName: _jsxFileName, lineNumber: 79 } },
+        _react.default.createElement(_appBar.default, {
+          title: 'Add Marker',
+          light: true,
+          menuIconName: 'close',
+          onMenuClick: this.closeForm, __source: { fileName: _jsxFileName, lineNumber: 80 } }),
+
+        _react.default.createElement(_reactNative.View, { style: _styles.default.formWrapper, __source: { fileName: _jsxFileName, lineNumber: 86 } },
+        _react.default.createElement(_reactNative.View, { style: _styles.default.formField, __source: { fileName: _jsxFileName, lineNumber: 87 } },
+        _react.default.createElement(_reactNative.Text, { style: _styles.default.inputLabel, __source: { fileName: _jsxFileName, lineNumber: 88 } }, "Title"),
+        _react.default.createElement(_reactNative.TextInput, { style: _styles.default.input,
+          onChangeText: function onChangeText(text) {return _this2.setValue('title', text);},
+          value: this.state.marker.title,
+          autoCapitalize: 'words',
+          defaultValue: this.state.marker.title, __source: { fileName: _jsxFileName, lineNumber: 89 } })),
+
+
+        _react.default.createElement(_reactNative.View, { style: _styles.default.formField, __source: { fileName: _jsxFileName, lineNumber: 96 } },
+        _react.default.createElement(_reactNative.Text, { style: _styles.default.inputLabel, __source: { fileName: _jsxFileName, lineNumber: 97 } }, "Description"),
+        _react.default.createElement(_reactNative.TextInput, { style: _styles.default.input,
+          onChangeText: function onChangeText(text) {return _this2.setValue('description', text);},
+          value: this.state.marker.description,
+          defaultValue: this.state.marker.description, __source: { fileName: _jsxFileName, lineNumber: 98 } })),
+
+
+        _react.default.createElement(_reactNative.View, { style: _styles.default.formField, __source: { fileName: _jsxFileName, lineNumber: 104 } },
+        _react.default.createElement(_reactNative.Text, { style: _styles.default.inputLabel, __source: { fileName: _jsxFileName, lineNumber: 105 } }, "Latitude"),
+        _react.default.createElement(_reactNative.TextInput, { style: _styles.default.input,
+          onChangeText: function onChangeText(text) {return _this2.setValue('latitude', text);},
+          value: this.state.marker.latitude,
+          defaultValue: this.state.marker.latitude,
+          keyboardType: 'numeric', __source: { fileName: _jsxFileName, lineNumber: 106 } })),
+
+
+        _react.default.createElement(_reactNative.View, { style: _styles.default.formField, __source: { fileName: _jsxFileName, lineNumber: 113 } },
+        _react.default.createElement(_reactNative.Text, { style: _styles.default.inputLabel, __source: { fileName: _jsxFileName, lineNumber: 114 } }, "Longitude"),
+        _react.default.createElement(_reactNative.TextInput, { style: _styles.default.input,
+          onChangeText: function onChangeText(text) {return _this2.setValue('longitude', text);},
+          value: this.state.marker.longitude,
+          defaultValue: this.state.marker.longitude,
+          keyboardType: 'numeric', __source: { fileName: _jsxFileName, lineNumber: 115 } })),
+
+
+        _react.default.createElement(_reactNative.View, { __source: { fileName: _jsxFileName, lineNumber: 122 } },
+        _react.default.createElement(_reactNative.Button, {
+          onPress: this.submit,
+          title: this.props.isUpdate ? 'Update' : 'Add',
+          color: _colors.default.accent,
+          disabled: hasError, __source: { fileName: _jsxFileName, lineNumber: 123 } }))))));
+
+
+
+
+
+
+    } }]);return AddMarker;}(_react.default.Component);
+
+
+AddMarker.propTypes = {
+  showForm: _propTypes.default.bool,
+  toggleForm: _propTypes.default.func,
+  marker: _propTypes.default.object,
+  isUpdate: _propTypes.default.bool,
+  updateMarker: _propTypes.default.func,
+  addMarker: _propTypes.default.func };var _default =
+
+
+AddMarker;exports.default = _default;

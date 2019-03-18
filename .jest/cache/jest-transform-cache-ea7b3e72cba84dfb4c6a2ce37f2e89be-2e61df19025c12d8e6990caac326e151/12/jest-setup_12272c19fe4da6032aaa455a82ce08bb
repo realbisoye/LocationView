@@ -1,0 +1,437 @@
+2e37bd17c58d21b05c5f57b5ec0ab65a
+/* istanbul ignore next */var cov_20gvgraqod = function () {
+  var path = '/Users/bisoyeatolagbe/projects/bisoye/LocationView/jest-setup.js',
+      hash = '8d2d9ff005f0885029fefde11d4030b701440597',
+      Function = function () {}.constructor,
+      global = new Function('return this')(),
+      gcv = '__coverage__',
+      coverageData = {
+    path: '/Users/bisoyeatolagbe/projects/bisoye/LocationView/jest-setup.js',
+    statementMap: {
+      '0': {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 29,
+          column: 3
+        }
+      },
+      '1': {
+        start: {
+          line: 2,
+          column: 20
+        },
+        end: {
+          line: 2,
+          column: 49
+        }
+      },
+      '2': {
+        start: {
+          line: 3,
+          column: 14
+        },
+        end: {
+          line: 3,
+          column: 30
+        }
+      },
+      '3': {
+        start: {
+          line: 4,
+          column: 13
+        },
+        end: {
+          line: 4,
+          column: 35
+        }
+      },
+      '4': {
+        start: {
+          line: 5,
+          column: 2
+        },
+        end: {
+          line: 28,
+          column: 4
+        }
+      },
+      '5': {
+        start: {
+          line: 5,
+          column: 45
+        },
+        end: {
+          line: 5,
+          column: 117
+        }
+      },
+      '6': {
+        start: {
+          line: 6,
+          column: 20
+        },
+        end: {
+          line: 20,
+          column: 34
+        }
+      },
+      '7': {
+        start: {
+          line: 22,
+          column: 4
+        },
+        end: {
+          line: 27,
+          column: 7
+        }
+      },
+      '8': {
+        start: {
+          line: 23,
+          column: 6
+        },
+        end: {
+          line: 23,
+          column: 23
+        }
+      },
+      '9': {
+        start: {
+          line: 23,
+          column: 44
+        },
+        end: {
+          line: 23,
+          column: 103
+        }
+      },
+      '10': {
+        start: {
+          line: 23,
+          column: 115
+        },
+        end: {
+          line: 23,
+          column: 141
+        }
+      },
+      '11': {
+        start: {
+          line: 24,
+          column: 6
+        },
+        end: {
+          line: 24,
+          column: 89
+        }
+      },
+      '12': {
+        start: {
+          line: 24,
+          column: 73
+        },
+        end: {
+          line: 24,
+          column: 89
+        }
+      },
+      '13': {
+        start: {
+          line: 26,
+          column: 6
+        },
+        end: {
+          line: 26,
+          column: 23
+        }
+      }
+    },
+    fnMap: {
+      '0': {
+        name: '(anonymous_0)',
+        decl: {
+          start: {
+            line: 1,
+            column: 30
+          },
+          end: {
+            line: 1,
+            column: 31
+          }
+        },
+        loc: {
+          start: {
+            line: 1,
+            column: 42
+          },
+          end: {
+            line: 29,
+            column: 1
+          }
+        },
+        line: 1
+      },
+      '1': {
+        name: '(anonymous_1)',
+        decl: {
+          start: {
+            line: 5,
+            column: 9
+          },
+          end: {
+            line: 5,
+            column: 10
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 33
+          },
+          end: {
+            line: 28,
+            column: 3
+          }
+        },
+        line: 5
+      },
+      '2': {
+        name: '(anonymous_2)',
+        decl: {
+          start: {
+            line: 22,
+            column: 30
+          },
+          end: {
+            line: 22,
+            column: 31
+          }
+        },
+        loc: {
+          start: {
+            line: 22,
+            column: 48
+          },
+          end: {
+            line: 27,
+            column: 5
+          }
+        },
+        line: 22
+      }
+    },
+    branchMap: {
+      '0': {
+        loc: {
+          start: {
+            line: 5,
+            column: 45
+          },
+          end: {
+            line: 5,
+            column: 117
+          }
+        },
+        type: 'cond-expr',
+        locations: [{
+          start: {
+            line: 5,
+            column: 98
+          },
+          end: {
+            line: 5,
+            column: 110
+          }
+        }, {
+          start: {
+            line: 5,
+            column: 113
+          },
+          end: {
+            line: 5,
+            column: 117
+          }
+        }],
+        line: 5
+      },
+      '1': {
+        loc: {
+          start: {
+            line: 5,
+            column: 45
+          },
+          end: {
+            line: 5,
+            column: 95
+          }
+        },
+        type: 'binary-expr',
+        locations: [{
+          start: {
+            line: 5,
+            column: 45
+          },
+          end: {
+            line: 5,
+            column: 65
+          }
+        }, {
+          start: {
+            line: 5,
+            column: 69
+          },
+          end: {
+            line: 5,
+            column: 95
+          }
+        }],
+        line: 5
+      },
+      '2': {
+        loc: {
+          start: {
+            line: 24,
+            column: 6
+          },
+          end: {
+            line: 24,
+            column: 89
+          }
+        },
+        type: 'if',
+        locations: [{
+          start: {
+            line: 24,
+            column: 6
+          },
+          end: {
+            line: 24,
+            column: 89
+          }
+        }, {
+          start: {
+            line: 24,
+            column: 6
+          },
+          end: {
+            line: 24,
+            column: 89
+          }
+        }],
+        line: 24
+      },
+      '3': {
+        loc: {
+          start: {
+            line: 24,
+            column: 10
+          },
+          end: {
+            line: 24,
+            column: 71
+          }
+        },
+        type: 'binary-expr',
+        locations: [{
+          start: {
+            line: 24,
+            column: 10
+          },
+          end: {
+            line: 24,
+            column: 29
+          }
+        }, {
+          start: {
+            line: 24,
+            column: 33
+          },
+          end: {
+            line: 24,
+            column: 71
+          }
+        }],
+        line: 24
+      }
+    },
+    s: {
+      '0': 0,
+      '1': 0,
+      '2': 0,
+      '3': 0,
+      '4': 0,
+      '5': 0,
+      '6': 0,
+      '7': 0,
+      '8': 0,
+      '9': 0,
+      '10': 0,
+      '11': 0,
+      '12': 0,
+      '13': 0
+    },
+    f: {
+      '0': 0,
+      '1': 0,
+      '2': 0
+    },
+    b: {
+      '0': [0, 0],
+      '1': [0, 0],
+      '2': [0, 0],
+      '3': [0, 0]
+    },
+    _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
+  },
+      coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+cov_20gvgraqod.s[0]++;
+jest.mock('./app/apiRequest', function () {
+  /* istanbul ignore next */cov_20gvgraqod.f[0]++;
+
+  var MockAdapter = /* istanbul ignore next */(cov_20gvgraqod.s[1]++, require('axios-mock-adapter'));
+  var axios = /* istanbul ignore next */(cov_20gvgraqod.s[2]++, require('axios'));
+  var mock = /* istanbul ignore next */(cov_20gvgraqod.s[3]++, new MockAdapter(axios));
+  /* istanbul ignore next */cov_20gvgraqod.s[4]++;
+  return function (path, method) {
+    /* istanbul ignore next */cov_20gvgraqod.f[1]++;
+    var data = /* istanbul ignore next */(cov_20gvgraqod.s[5]++, /* istanbul ignore next */(cov_20gvgraqod.b[1][0]++, arguments.length > 2) && /* istanbul ignore next */(cov_20gvgraqod.b[1][1]++, arguments[2] !== undefined) ? /* istanbul ignore next */(cov_20gvgraqod.b[0][0]++, arguments[2]) : /* istanbul ignore next */(cov_20gvgraqod.b[0][1]++, null));
+    var responses = /* istanbul ignore next */(cov_20gvgraqod.s[6]++, [['GET', '/markers', 200, [{
+      longitude: -74.044502,
+      latitude: 40.689247,
+      description: 'Liberty is fine',
+      title: 'Status Of Liberty' }]], ['POST', '/markers', 200, data], ['PATCH', '/markers/1', 200, {
+      longitude: -73.968285,
+      latitude: 40.785091,
+      description: 'Central Park playground update',
+      title: 'Central Park' }], ['DELETE', '/markers/1', 204]]);
+
+    /* istanbul ignore next */cov_20gvgraqod.s[7]++;
+    return mock.onAny().reply(function (config) {
+      /* istanbul ignore next */cov_20gvgraqod.f[2]++;
+      var _responses$shift = /* istanbul ignore next */(cov_20gvgraqod.s[8]++, responses.shift()),
+          _responses$shift2 = /* istanbul ignore next */(cov_20gvgraqod.s[9]++, require("@babel/runtime/helpers/toArray")(_responses$shift)),
+          response = /* istanbul ignore next */(cov_20gvgraqod.s[10]++, _responses$shift2.slice(0));
+      /* istanbul ignore next */cov_20gvgraqod.s[11]++;
+      if ( /* istanbul ignore next */(cov_20gvgraqod.b[3][0]++, config.url === path) && /* istanbul ignore next */(cov_20gvgraqod.b[3][1]++, config.method.toUpperCase() === method)) {
+          /* istanbul ignore next */cov_20gvgraqod.b[2][0]++;
+          cov_20gvgraqod.s[12]++;
+          return response;
+        } else /* istanbul ignore next */{
+        cov_20gvgraqod.b[2][1]++;
+      }cov_20gvgraqod.s[13]++;
+      return [500, {}];
+    });
+  };
+});

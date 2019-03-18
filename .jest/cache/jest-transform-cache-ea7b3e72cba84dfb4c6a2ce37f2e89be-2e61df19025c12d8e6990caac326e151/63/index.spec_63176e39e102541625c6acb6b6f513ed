@@ -1,0 +1,11 @@
+6a3bfd82355e4da8d31f63b54d707739
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));var _apiRequest = _interopRequireDefault(require("../app/apiRequest"));
+
+describe('API Fetch', function () {
+  it('successfully ', function _callee() {var response;return _regenerator.default.async(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return _regenerator.default.awrap(
+            (0, _apiRequest.default)('/markers', 'GET'));case 2:response = _context.sent;
+
+            expect(response).not.toBeNull();
+            expect(response).not.toBeUndefined();case 5:case "end":return _context.stop();}}}, null, this);});
+
+});

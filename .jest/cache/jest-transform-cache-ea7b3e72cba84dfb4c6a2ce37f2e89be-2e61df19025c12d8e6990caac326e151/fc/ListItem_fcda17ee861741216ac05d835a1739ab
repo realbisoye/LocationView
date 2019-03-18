@@ -1,0 +1,46 @@
+f656c1e0bcf2544e2af7a1e1f14f6e70
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _react = _interopRequireDefault(require("react"));
+var _reactNative = require("react-native");
+var _MaterialCommunityIcons = _interopRequireDefault(require("react-native-vector-icons/dist/MaterialCommunityIcons"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _reactNativePopupMenu = require("react-native-popup-menu");
+
+
+
+
+
+var _styles = _interopRequireDefault(require("./styles"));
+var _colors = _interopRequireDefault(require("../shared/colors"));var _jsxFileName = "/Users/bisoyeatolagbe/projects/bisoye/LocationView/app/components/markerList/ListItem.js";
+
+var ListItem = function ListItem(props) {return (
+    _react.default.createElement(_reactNative.View, { style: _styles.default.listItemWrapper, __source: { fileName: _jsxFileName, lineNumber: 15 } },
+    _react.default.createElement(_MaterialCommunityIcons.default, { name: 'map-marker', size: 30, color: _colors.default.accent, __source: { fileName: _jsxFileName, lineNumber: 16 } }),
+    _react.default.createElement(_reactNative.View, { style: _styles.default.listItemDetails, __source: { fileName: _jsxFileName, lineNumber: 17 } },
+    _react.default.createElement(_reactNative.View, { style: _styles.default.listItemTitleWrapper, __source: { fileName: _jsxFileName, lineNumber: 18 } },
+    _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemTitle, __source: { fileName: _jsxFileName, lineNumber: 19 } }, props.item.title),
+    _react.default.createElement(_reactNativePopupMenu.Menu, { __source: { fileName: _jsxFileName, lineNumber: 20 } },
+    _react.default.createElement(_reactNativePopupMenu.MenuTrigger, { __source: { fileName: _jsxFileName, lineNumber: 21 } },
+    _react.default.createElement(_MaterialCommunityIcons.default, { name: 'dots-vertical', size: 22, color: _colors.default.primaryText, __source: { fileName: _jsxFileName, lineNumber: 22 } })),
+
+    _react.default.createElement(_reactNativePopupMenu.MenuOptions, { __source: { fileName: _jsxFileName, lineNumber: 24 } },
+    _react.default.createElement(_reactNativePopupMenu.MenuOption, { onSelect: function onSelect() {return props.editMarker(props.item);}, text: "Edit", __source: { fileName: _jsxFileName, lineNumber: 25 } }),
+    _react.default.createElement(_reactNativePopupMenu.MenuOption, { onSelect: function onSelect() {return props.deleteMarker(props.item._id);}, text: "Delete", __source: { fileName: _jsxFileName, lineNumber: 26 } })))),
+
+
+
+    props.item.description && _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemDescription, __source: { fileName: _jsxFileName, lineNumber: 30 } }, props.item.description),
+    _react.default.createElement(_reactNative.View, { style: _styles.default.listItemCoordinates, __source: { fileName: _jsxFileName, lineNumber: 31 } },
+    _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemCoordinateText, __source: { fileName: _jsxFileName, lineNumber: 32 } }, "Latitude: ", props.item.latitude),
+    _react.default.createElement(_reactNative.Text, { style: _styles.default.listItemCoordinateText, __source: { fileName: _jsxFileName, lineNumber: 33 } }, "Longitude: ", props.item.longitude)))));};
+
+
+
+
+
+ListItem.propTypes = {
+  item: _propTypes.default.object,
+  editMarker: _propTypes.default.func,
+  deleteMarker: _propTypes.default.func };var _default =
+
+
+ListItem;exports.default = _default;

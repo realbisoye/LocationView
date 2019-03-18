@@ -1,0 +1,31 @@
+25f84e0e930de39bfb171aa278e397a5
+"use strict";var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");var _reduxMockStore = _interopRequireDefault(require("redux-mock-store"));
+var _reduxThunk = _interopRequireDefault(require("redux-thunk"));
+var actions = _interopRequireWildcard(require("../../app/actions"));
+
+var middlewares = [_reduxThunk.default];
+var mockStore = (0, _reduxMockStore.default)(middlewares);
+
+describe('Actions', function () {
+  it('fetchMarkers return markers', function () {
+    var store = mockStore();
+    var actionData = [{
+      type: 'LOADING' },
+    {
+      type: 'RECEIVE_MARKERS',
+      markers: [{
+        longitude: -74.044502,
+        latitude: 40.689247,
+        description: 'Liberty is fine',
+        title: 'Status Of Liberty' }] }];
+
+
+
+    store.dispatch(actions.fetchMarkers());
+    var dispatched = store.getActions();
+    console.log(dispatched, 'DATAT');
+    expect(dispatched[0].type).toEqual(actionData[0].type);
+    expect(dispatched[1].type).toEqual(actionData[1].type);
+    expect(dispatched[1].payload).toEqual(actionData.markers);
+  });
+});

@@ -1,0 +1,34 @@
+bddf39013c1bb5eeacbe61a47452e984
+"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _reactNative = require("react-native");
+var _colors = _interopRequireDefault(require("../shared/colors"));
+
+var styles = _reactNative.StyleSheet.create({
+  formField: {
+    flexDirection: 'column',
+    marginVertical: 10 },
+
+  formWrapper: {
+    flex: 1,
+    marginHorizontal: 20,
+    marginTop: 30 },
+
+  input: {
+    borderColor: _colors.default.appBarDark,
+    borderWidth: 1,
+    height: 40,
+    paddingHorizontal: 10 },
+
+  inputLabel: {
+    color: _colors.default.primaryText,
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginBottom: 5 },
+
+  modalContent: {
+    backgroundColor: _colors.default.appBarLight,
+    flex: 1,
+    flexDirection: 'column' } });var _default =
+
+
+
+styles;exports.default = _default;
